@@ -2,7 +2,7 @@
 
 libri keeps restrictions attached to statements extracted from technical documentation. The resulting graph can be saved and searched, with each result linked to its source.
 
-**Status:** The Python NLP extractor is available for integration on this branch. The sections below describe the broader project design. See the [extractor and offline replay](nlp/RUN.md), [four sample output records](nlp/examples/candidates.plain.json), and [Part B handoff](nlp/HANDOFF.zh.md).
+**Status:** The Python NLP extractor is available for integration on this branch. The sections below describe the broader project design. See the [extractor and offline replay](nlp/RUN.md) and [four sample output records](nlp/examples/candidates.plain.json).
 
 ## Example
 

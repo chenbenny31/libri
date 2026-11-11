@@ -9,7 +9,7 @@ The four methods used the same target spans, paragraph text and frozen plain-tex
 | `svo_plain` | Root verb plus direct subject and object heads | 1 | 0 |
 | `scope_removed_plain` | v0.11 with designated scope structures removed | 21 | 2 |
 
-Each row in the [review file](meaning_review.json) has a target ID, the source revision, the original requirement and evidence, and a judgment with a reason for each method. Join a target to the v0.11 replay using its ID. The labels are AI-assisted development judgments. The team's independent evaluation on other documents is pending.
+Each row in the [review file](meaning_review.json) has a target ID, the source revision, the original requirement and evidence, and a judgment label for each method. Join a target to the v0.11 replay using its ID. The labels are AI-assisted development judgments. The team's independent evaluation on other documents is pending.
 
 * `retained` means the extracted fields express the required meaning, including the requested attachment or scope.
 * `partial` means they express a correct structural part of that requirement.

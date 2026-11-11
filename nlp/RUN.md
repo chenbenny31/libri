@@ -52,9 +52,9 @@ For your own input, supply a JSON array with a unique string `id` and `text` per
 [{"id":"smoke-001","text":"The service writes logs by default."}]
 ```
 
-## Development evaluation and handoff
+## Examples and evaluation
 
-Start with the [four complete output records](examples/candidates.plain.json) for an importer, the [32-target comparison](development/README.md) for a scorer, or the [Chinese team handoff](HANDOFF.zh.md).
+For an importer, use the [four complete output records](examples/candidates.plain.json). For evaluation, see the [32-target comparison](development/README.md).
 
 ## Source versions
 

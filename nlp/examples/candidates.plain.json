@@ -3,7 +3,7 @@
   "schema_status": "local_proposal_not_OCaml_importer_verified",
   "rule_version": "libri-b-local-0.11",
   "offset_convention": "Unicode code points in input.text, zero-based half-open; not UTF-8 bytes or original-file offsets",
-  "artifact_type": "first_team_update_selected_development_records_not_gold",
+  "artifact_type": "selected_development_candidates_not_gold",
   "records": [
     {
       "id": "docker-restart-prerequisite-001",

@@ -50,20 +50,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "完整git add command主语、add谓词、ignored files限定宾语均在frame中。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "主语是完整 git add command，谓词 add，宾语含 ignored 限定。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "partial",
-              "reason_zh": "command—add—files的中心词语法关系保留，但主语丢git add、宾语丢ignored；不是完整命令与被忽略文件关系。"
+              "judgment": "partial"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "主语是完整 git add command，谓词 add，宾语含 ignored 限定。"
+              "judgment": "retained"
             }
           }
         },
@@ -84,20 +80,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "not绑定add，will的prediction包住否定，未成为禁止用户操作的义务。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "not 明确绑定 add；结构内为 will 的预测模态包裹否定，不是禁止用户执行。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "payload没有not或任何否定绑定；原文仍在input不能算本方法恢复。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "negation节点被删除，局部候选没有not证据或否定作用域；全文evidence不计作局部恢复。"
+              "judgment": "missing"
             }
           }
         },
@@ -118,20 +110,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "default包住完整预测否定结构，保留默认行为而非永久禁止。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "default 包住完整预测否定结构，保留默认而非永远禁止的区别。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "payload没有by default或default包裹负行为的结构。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "default及预测否定组合均删除，没有局部默认范围节点；不能由parent_status或全文补回。"
+              "judgment": "missing"
             }
           }
         }
@@ -172,20 +160,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "没有主frame，git add/fail/will与条件组合未进入局部候选；PP中的fail挂接不足以恢复完整主行为。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "missing",
-              "reason_zh": "完整主语/预测/条件失败结构均未导出；with PP 只提供 fail 的句法 governor，不能恢复本要求的完整局部主行为。"
+              "judgment": "missing"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；git add在完整if条件下fail的行为、will及条件绑定均无局部输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "完整主语/预测/条件失败结构均未导出；with PP 只提供 fail 的句法 governor，不能恢复本要求的完整局部主行为。"
+              "judgment": "missing"
             }
           }
         },
@@ -206,20 +190,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "没有condition frame或局部条件证据；exact filename/ignored file仅在整句和原解析中。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "missing",
-              "reason_zh": "没有局部 condition/frame，只有完整原句和裸解析；exact/ignored 条件未进入候选语义或局部片段。"
+              "judgment": "missing"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；exact filename of an ignored file条件及两个必要限定均无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "没有局部 condition/frame，只有完整原句和裸解析；exact/ignored 条件未进入候选语义或局部片段。"
+              "judgment": "missing"
             }
           }
         },
@@ -240,20 +220,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "with a list of ignored files在局部PP库存，但语义绑定明确未决，未表示failure output。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "完整 with a list of ignored files 在 PP inventory 中，semantic_binding=unresolved；没有 failure/output 语义关系。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；failure伴随ignored-file列表的结果关系无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "完整 with a list of ignored files 在 PP inventory 中，semantic_binding=unresolved；没有 failure/output 语义关系。"
+              "judgment": "text_only"
             }
           }
         }
@@ -294,20 +270,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "旧版因passive_not_supported直接放弃，命令被动行为和can均没有局部结构。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "git status command 为被动语法主语，can=possibility、be 为被动助词；没有伪造执行者或已发生执行。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；被动git status命令及can无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "完整git status command与被动used/be保留、无伪造actor，但can模态已删除；原要求明确是modal passive main statement，尚不完整。"
+              "judgment": "partial"
             }
           }
         },
@@ -328,20 +300,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "目的没有局部qualifier或purpose候选，只剩整句。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "to obtain a summary 在完整局部 unmodeled 片段中；被动 use 尚无 purpose 语义关系。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；obtain summary的用途无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "to obtain a summary 在完整局部 unmodeled 片段中；被动 use 尚无 purpose 语义关系。"
+              "judgment": "text_only"
             }
           }
         },
@@ -362,20 +330,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "summary内容、staged和next commit限定没有进入任何局部候选。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "which files have changes that are staged for the next commit 全文随局部片段保存，summary 内容/changes 的 staged 限定和 next-commit 绑定未建模。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；staged changes和next commit的摘要内容范围无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "which files have changes that are staged for the next commit 全文随局部片段保存，summary 内容/changes 的 staged 限定和 next-commit 绑定未建模。"
+              "judgment": "text_only"
             }
           }
         }
@@ -416,20 +380,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "command—exit与shall保留，但still只为unmodeled，延续/反预期范围没有结构。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "command—exit 和 shall 力度保留，但 still 单独标为 unresolved，延续/反预期含义没有结构化；本轮按完整要求而非只看 exit 判 partial。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；shall still exit的行为与延续含义无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "command—exit关系保留；shall模态已删，still仍是未解释文字，完整的延续性文档行为未表达。"
+              "judgment": "partial"
             }
           }
         },
@@ -450,20 +410,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "non-zero status完整保存在with未决片段/PP；没有exit_status语义绑定，也未输出does-not-exit。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "non-zero status 完整绑定 exit_status，non-zero 没有变成不退出或具体数值1。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；exit的non-zero状态值与绑定无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "non-zero status 完整绑定 exit_status，non-zero 没有变成不退出或具体数值1。"
+              "judgment": "retained"
             }
           }
         }
@@ -504,20 +460,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "Add原形动作在非独立frame中，没有显式actor；无需强制新版imperative标签才能保留本要求。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "Add 为无显式主语的原形动作，未造实际 actor role 或发生事实；imperative/implicit_addressee 是当前句法标签。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；Add原形指令动作无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "Add 为无显式主语的原形动作，未造实际 actor role 或发生事实；imperative/implicit_addressee 是当前句法标签。"
+              "judgment": "retained"
             }
           }
         },
@@ -538,20 +490,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "object含contents of new or changed files，但OR未解释且对象还吞入to index，完整对象边界/逻辑未解决。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "宾语已保留 contents of new or changed files，且没有吞入 to index；但内部 new OR changed 的组合仍随 unmodeled nmod 保存，没有解释 OR 范围。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；contents of new OR changed files的对象无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "宾语已保留 contents of new or changed files，且没有吞入 to index；但内部 new OR changed 的组合仍随 unmodeled nmod 保存，没有解释 OR 范围。"
+              "judgment": "partial"
             }
           }
         },
@@ -572,20 +520,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "to the index有局部PP及原parser挂到files的观察，semantic_binding未决，未建立add的destination。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "to the index 通过有界路径改绑为 add 的 destination_of_added_content，原 parser 附着另外保留。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；to index目的地绑定无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "to the index 通过有界路径改绑为 add 的 destination_of_added_content，原 parser 附着另外保留。"
+              "judgment": "retained"
             }
           }
         }
@@ -626,20 +570,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "无frame/qualifier/局部别名候选，index与staging area同一性只在全文中。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "missing",
-              "reason_zh": "无 frame/qualifier 或局部别名证据，只有整句 evidence 与裸解析；index=staging area 未进入可消费的局部语义候选。"
+              "judgment": "missing"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；index与staging area别名关系无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "无 frame/qualifier 或局部别名证据，只有整句 evidence 与裸解析；index=staging area 未进入可消费的局部语义候选。"
+              "judgment": "missing"
             }
           }
         },
@@ -660,20 +600,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "prepare与next-commit目的仅在整句，没有任何局部用途结构。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "missing",
-              "reason_zh": "没有用途候选或局部 prepare/next-commit 证据，只有全文回退；不能将裸解析算作语义恢复。"
+              "judgment": "missing"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；prepare next commit contents的定义用途无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "没有用途候选或局部 prepare/next-commit 证据，只有全文回退；不能将裸解析算作语义恢复。"
+              "judgment": "missing"
             }
           }
         }
@@ -714,20 +650,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "完整When you run git commit without any other arguments在unmodeled中，when与无其他参数条件未解释。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "When you run git commit without any other arguments 整段保留在局部 unmodeled；when 条件和 without 参数缺省没有语义结构。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "when运行完整git commit且不带其他参数的条件全部未输出。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "When you run git commit without any other arguments 整段保留在局部 unmodeled；when 条件和 without 参数缺省没有语义结构。"
+              "judgment": "text_only"
             }
           }
         },
@@ -748,20 +680,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "it/commit/staged changes和will在结构中，但it未链接git commit且when后件组合未建立。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "commit 与 will 描述模态有结构，但 it 的命令指代未消解，when 后件组合也未建立；本项明确要求 invocation 关联，不能视为完整。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "partial",
-              "reason_zh": "it—commit—changes主干保留，但it没有链接git commit，will模态和when后件依赖均缺失。"
+              "judgment": "partial"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "it—commit—staged changes仍为局部结构，但it未解指，will已删除，when后件组合原本也未建立。"
+              "judgment": "partial"
             }
           }
         },
@@ -782,20 +710,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "staged changes完整作为object；only只是未决cue，没有排他对象范围。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "staged changes 是完整宾语；only 仅为 unresolved cue，其排他对象范围未解释。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "partial",
-              "reason_zh": "commit的对象仍为changes；staged和only都没有输出，无法表达仅提交已暂存修改。"
+              "judgment": "partial"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "staged changes 是完整宾语；only 仅为 unresolved cue，其排他对象范围未解释。"
+              "judgment": "partial"
             }
           }
         }
@@ -852,20 +776,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "You字面第二人称作为subject，add作用于part of your changes的object；无需新增mention标签或指定某个人即可保留原参与者。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "You 为文档读者，add 和 part of your changes 在宾语中保留，未改成对文件执行添加。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "partial",
-              "reason_zh": "You—add—part保留主体和动作，但part属于your changes这一必要对象内容丢失。"
+              "judgment": "partial"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "You 为文档读者，add 和 part of your changes 在宾语中保留，未改成对文件执行添加。"
+              "judgment": "retained"
             }
           }
         },
@@ -886,20 +806,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "can possibility正确，但also额外能力只为unmodeled，完整can-also要求不全。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "can 的 possibility 正确保留；also 表示额外能力但仍为 unmodeled，完整 can also 要求尚未完全表达。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "can和also均没有输出，三元组没有额外能力的模态关系。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "can已删除；also虽然还在局部unmodeled文字中，但无法单独表示附加能力的核心模态含义。"
+              "judgment": "missing"
             }
           }
         },
@@ -920,20 +836,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "only part of your changes对象片段保留，但only范围与changes-to-file绑定未解释，不能当全部变化。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "only part of your changes 有对象片段，但 only 的范围逻辑和 changes-to-file 的名词绑定未确定；to file 仍是未决片段。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "partial",
-              "reason_zh": "part仍是add的对象中心词，保留部分/子集线索；only、changes归属及changes-to-file关系均丢失。"
+              "judgment": "partial"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "only part of your changes 有对象片段，但 only 的范围逻辑和 changes-to-file 的名词绑定未确定；to file 仍是未决片段。"
+              "judgment": "partial"
             }
           }
         },
@@ -954,20 +866,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "局部文字切成with git和add -p，合并可以核对来源，但没有完整git add -p的method语义绑定。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "with git与add -p分别保存在局部未决片段；完整方法关系未绑定。source code mention只作来源格式参照，不作为语义恢复的额外证据。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "git add -p命令和with方法关系不在payload；不能从共享source_code sidecar给本方法加分。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "with git与add -p分别保存在局部未决片段；能回查命令文字，但没有完整git add -p的method绑定，不借code_mentions或源格式补语义答案。"
+              "judgment": "text_only"
             }
           }
         }
@@ -1016,20 +924,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "passive_not_supported导致没有performed/This command局部frame。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "This command 为 nsubj:pass，performed 是被动谓词；未命名执行者。当前要求允许保留未决命令指称，身份在 context 单独审查。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；This command的被动performed关系无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "This command 为 nsubj:pass，performed 是被动谓词；未命名执行者。当前要求允许保留未决命令指称，身份在 context 单独审查。"
+              "judgment": "retained"
             }
           }
         },
@@ -1050,20 +954,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "can未进入qualifier，全文不当局部模态恢复。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "can=possibility，未标义务或必然发生。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；can可能性无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "can模态节点被删除；被动performed及时间/频率字段不能表达可能性或能力。"
+              "judgment": "missing"
             }
           }
         },
@@ -1084,20 +984,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "multiple times未进入局部证据或频率关系。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "multiple times 作为 frequency/repeated_unspecified_count 绑定 performed，并处在同一带 can 的父 frame 中。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；multiple times重复频率无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "multiple times仍正确绑定performed的frequency，但本项所说重复执行被允许的can模态已删除；频率保留不等于允许重复的完整意义。"
+              "judgment": "partial"
             }
           }
         },
@@ -1118,20 +1014,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "before a commit未进入局部时间片段或绑定。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "before a commit 的 temporal_before 正确绑定 performed；未断言已经提交。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；before commit的时间绑定无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "before a commit 的 temporal_before 正确绑定 performed；未断言已经提交。"
+              "judgment": "retained"
             }
           }
         }
@@ -1172,20 +1064,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "adds及content of specified files保留；It身份和only范围仍未决。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "adds 和 content of the specified file(s) 保留，但 It 未关联 add command，only 未解释；此第一分句要求未完整。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "partial",
-              "reason_zh": "It—adds—content正确保留内容而非移动文件的中心词关系；it身份、specified files及only范围没有输出。"
+              "judgment": "partial"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "adds 和 content of the specified file(s) 保留，但 It 未关联 add command，only 未解释；此第一分句要求未完整。"
+              "judgment": "partial"
             }
           }
         },
@@ -1206,20 +1094,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "at the time the add command is run完整在unmodeled里，没有快照时间关系。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "at the time the add command is run 仅为局部 unmodeled；没有 snapshot 时间关系。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "at the time the add command is run没有输出，不能表示内容快照的时间边界。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "at the time the add command is run 仅为局部 unmodeled；没有 snapshot 时间关系。"
+              "judgment": "text_only"
             }
           }
         },
@@ -1240,20 +1124,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "if-goal的完整文字在第二大unmodeled片段，没有条件及目标后件连接。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "if you want subsequent changes included in the next commit 保留在第二大局部片段内，但没有愿望条件及对应后件。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "希望后续修改进入next commit的条件属于后半句，SVO只取主root，未输出此目标条件。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "if you want subsequent changes included in the next commit 保留在第二大局部片段内，但没有愿望条件及对应后件。"
+              "judgment": "text_only"
             }
           }
         },
@@ -1274,20 +1154,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "must run git add again在局部片段，未有条件义务或重复动作结构。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "must run git add again 同在局部 unmodeled 中；没有子事件、条件义务或 again 重复绑定。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "must run git add again的后件动作、完整命令、义务与重复限定均未输出。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "must run git add again 同在局部 unmodeled 中；没有子事件、条件义务或 again 重复绑定。"
+              "judgment": "text_only"
             }
           }
         },
@@ -1308,20 +1184,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "to add new content to index字面在局部片段，另有PP；没有重复调用的目的/结果关系。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "to add the new content to the index 的字面在局部片段，to index 另有语法 PP；没有 repeated invocation 的 purpose/目的地语义连接。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "再次调用的add new content to index目的/结果均未输出；首分句adds content不能代替另一个动作的关系。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "to add the new content to the index 的字面在局部片段，to index 另有语法 PP；没有 repeated invocation 的 purpose/目的地语义连接。"
+              "judgment": "text_only"
             }
           }
         }
@@ -1362,20 +1234,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "Remove原形动作和files对象在非独立frame中，无伪造actor或完成删除断言；不强制新版Mood字段。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "Remove—files 原形动作及宾语保留；无显式执行者 role、无已删除断言。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；Remove—files原形动作和对象无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "Remove—files 原形动作及宾语保留；无显式执行者 role、无已删除断言。"
+              "judgment": "retained"
             }
           }
         },
@@ -1396,20 +1264,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "matching pathspec在unmodeled片段，没有绑定成files的必要限制。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "matching pathspec 被 parser 挂为 advcl，完整文字随 unmodeled 保存；没有绑定为 files 的必要限制。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；matching pathspec对文件的限制无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "matching pathspec 被 parser 挂为 advcl，完整文字随 unmodeled 保存；没有绑定为 files 的必要限制。"
+              "judgment": "text_only"
             }
           }
         },
@@ -1430,20 +1294,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "from index OR working tree AND index完整在片段，移除范围/并列尚未解释。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "from index OR from working tree AND index 完整在 unmodeled 中，移除范围/嵌套并列未建模。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；from index OR from working tree AND index的范围组合无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "from index OR from working tree AND index 完整在 unmodeled 中，移除范围/嵌套并列未建模。"
+              "judgment": "text_only"
             }
           }
         }
@@ -1500,20 +1360,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "git rm/remove/file在frame，working directory仅在未决PP文字，位置关系尚缺。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "git rm—remove—file 明确，但 your working directory 只在未决 PP 文字中，没有 removal-location 绑定。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "partial",
-              "reason_zh": "rm—remove—file保留部分主干，但git rm名称被缩成rm，且没有working-directory位置关系。"
+              "judgment": "partial"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "git rm—remove—file 明确，但 your working directory 只在未决 PP 文字中，没有 removal-location 绑定。"
+              "judgment": "partial"
             }
           }
         },
@@ -1534,20 +1390,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "will/not局部解释存在，但本项binding要求含just-working-directory的完整负行为；PP范围未解释，结构为空。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "will 和 not 的局部力度/否定存在；本项要求包裹 just-working-directory 限制的完整负行为，而该限制未解释且 candidate_structure=null。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "will/not全部缺失，payload也没有包裹just范围的负行为结构；不从被删词推回否定。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "will与not均删除；局部frame和未决from/just文字不能表达文档中的负行为，也不能从全文回补。"
+              "judgment": "missing"
             }
           }
         },
@@ -1568,20 +1420,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "from just your working directory作为未决片段保存，just的排他范围和否定组合没有解释。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "from just your working directory 仅为未决局部片段，没有 just 的排他范围与否定组合。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "from just your working directory和排他范围均未输出，不能恢复not(remove from only working directory)。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "from just your working directory仍作为局部未决文字保存，just排他范围未解释；not被删除后更没有负行为内部的范围组合。本项仍仅能计局部范围文字，不能计完整含义。"
+              "judgment": "text_only"
             }
           }
         }
@@ -1622,20 +1470,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "Override原形动作在非独立frame中，未命名actor或断言已覆盖检查；不要求特定instruction标签。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "Override 动作保留，原形无显式主语；没有制造已完成的覆盖操作。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；Override指令动作无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "Override 动作保留，原形无显式主语；没有制造已完成的覆盖操作。"
+              "judgment": "retained"
             }
           }
         },
@@ -1656,20 +1500,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "up-to-date check完整作为object，连字符限定没有丢失或变成all checks。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "完整 up-to-date check 作为 object，连字符修饰未丢；未变成任意/all checks。内部 case 导致程序 partial 不等于此项语义丢失。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；完整up-to-date check对象无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "完整 up-to-date check 作为 object，连字符修饰未丢；未变成任意/all checks。内部 case 导致程序 partial 不等于此项语义丢失。"
+              "judgment": "retained"
             }
           }
         }
@@ -1710,20 +1550,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "remove与完整file(s)对象存在；无显式actor且negation保留。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "remove 及 file(s) 的宾语保留，无具体 actor；没有把原文格式 file(s) 删掉。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；remove—files动作/对象无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "remove和any file(s)对象保留且没有actor，但本项binding明确要求处在negative instruction之下；否定被删除，保留的是操作骨架。"
+              "judgment": "partial"
             }
           }
         },
@@ -1744,20 +1580,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "否定绑定remove，actually仍unmodeled，未完整表达非实际执行/preview区分。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "否定 n't 已绑定 remove，但 actually 仍是 unmodeled；实际执行与 preview 的区别没有明确结构化。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；not actually的执行否定无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "否定n’t已删除，只余Do助词及actually未决片段；缺失no-actual-removal的核心负含义，不能借整句evidence补回。"
+              "judgment": "missing"
             }
           }
         },
@@ -1778,20 +1610,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "any file(s)整体在object，但det量词逻辑未建模，不能因字符串全就称每个文件范围完整。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "any file(s) 整体在宾语中，但 any 的量化范围仍是未建模 det，不能只凭完整字符串判逻辑 retained。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；否定内部any file(s)量化无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "any file(s)作为对象仍存在，但any量词逻辑未解释，而且外围否定已删除；不能表达针对所有相关文件的不实际删除。"
+              "judgment": "partial"
             }
           }
         }
@@ -1832,20 +1660,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "Use与this option原指示对象保留且非独立断言，未伪造--cached输入span；具体标题身份另外评价。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "Use 与 this option 原指示对象保留，reference_status=unresolved；本要求允许保留原 mention，不要求伪造 --cached span。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；use this option指令与指示对象无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "Use 与 this option 原指示对象保留，reference_status=unresolved；本要求允许保留原 mention，不要求伪造 --cached span。"
+              "judgment": "retained"
             }
           }
         },
@@ -1866,20 +1690,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "unstage AND remove paths只在包含ACL的整个object局部片段，未有purpose或子动作/并列语义结构。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "purpose 候选有 unstage、remove、and 与 paths，但 ACL 的 purpose 关系和共享对象仍 unresolved，未变为确定的完整协调目的。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；unstage AND remove paths目的无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "purpose节点及子动作索引已删除；完整to unstage and remove paths仍残留在父object的长短语中，只有局部文字，未形成协调目的关系。"
+              "judgment": "text_only"
             }
           }
         },
@@ -1900,20 +1720,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "only from index仍在对象内局部文字，没有PP焦点、目的动作目标或排他范围解释。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "only 的 PP 焦点、字面 from 与 the index 已解释；但是 confirmed_target_action=null、动作范围 unresolved，不能当成完整 remove-only-from-index。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；only from index的排他范围无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "only from the index仍在父object长短语中，但purpose内PP焦点及动作范围overlay已删；既不能恢复目标动作，也不能把原词面当排他范围解释。"
+              "judgment": "text_only"
             }
           }
         }
@@ -1954,20 +1770,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "Exit动作存在，zero status在with未决片段/PP，但没有exit_status语义绑定。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "Exit 与 zero status 的 exit_status 关系完整；imperative-like 描述不声称已发生退出。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；exit与zero status结果关系无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "Exit 与 zero status 的 exit_status 关系完整；imperative-like 描述不声称已发生退出。"
+              "judgment": "retained"
             }
           }
         },
@@ -1988,20 +1800,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "子条件解析失败，没有no files matched局部片段或frame，只剩全文。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "no files matched 作为完整 unresolved_condition.condition_evidence 保存；no 的零匹配含义/子句结构未解释。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；no files matched让步场景无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "unresolved_condition整节点被删除，no files matched没有进入其他局部候选；仅全文保留不能计局部恢复。"
+              "judgment": "missing"
             }
           }
         },
@@ -2022,20 +1830,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "even if未进入局部cue或条件关系，不能从整句证据计让步保留。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "even if 的完整 cue 与 scenario 保存，但 relation_hint=if 不是已支持让步逻辑，condition_structure=null，语义未决。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；even if对zero-status的让步绑定无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "even if cue与完整情景证据都随unresolved_condition删除；zero status仍在，但不能表达让步关系。"
+              "judgment": "missing"
             }
           }
         }
@@ -2084,20 +1888,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "take effect完整谓语与restart policy主语正确，未变成容器重启。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "take effect作为完整谓语，restart policy为主语，主事件没有误变为容器重启。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "partial",
-              "reason_zh": "policy—takes—effect保留原句主干的语法中心词，但restart限定丢失，take effect也未合成该方法的完整谓语。"
+              "judgment": "partial"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "take effect作为完整谓语，restart policy为主语，主事件没有误变为容器重启。"
+              "judgment": "retained"
             }
           }
         },
@@ -2118,20 +1918,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "container/start和successfully完整，only_after把该条件接到主行为。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "条件frame包含container/start及supported successfully方式限定；没有把仅启动等同成功启动。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "没有container/start/successfully的条件局部输出，也没有连接到policy生效的前提关系。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "container/start/successfully仍在f2及manner中，但only_after关系已删；该完整动作尚未绑定为policy生效的前提。"
+              "judgment": "partial"
             }
           }
         },
@@ -2160,20 +1956,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "only_after方向为main_requires_condition，明确不断言条件或主事件已发生。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "only_after连接主frame与成功启动条件；direction为main_requires_condition，并明确不断言任一事件发生。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "only和after以及必要条件方向都未输出；仅policy takes effect中心词不能表达only-after。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "only_after及main_requires_condition方向已删除；两个frame并存不能表示必要、时间关系或排除充分触发读法。"
+              "judgment": "missing"
             }
           }
         }
@@ -2214,20 +2006,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "被动主谓因passive_not_supported未产frame，policy被忽略关系仅剩全文。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "ignored被动frame的nsubj:pass为restart policy，voice明确passive，没有发明忽略者或把container当被忽略对象。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；restart policy作为被忽略对象的被动关系无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "ignored被动frame的nsubj:pass为restart policy，voice明确passive，没有发明忽略者或把container当被忽略对象。"
+              "judgment": "retained"
             }
           }
         },
@@ -2248,20 +2036,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "没有if/stop/manually局部候选，全文中的条件不计恢复。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "you/stop/container及manually完整，supported if把这个动作作为ignored的条件；普通退出未被视作同义。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；手动stop的if条件与manually无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "you—stop—container及manually完整保留，但if节点已删；不能从两个frame推导手动停止是ignored的条件。"
+              "judgment": "partial"
             }
           }
         },
@@ -2282,20 +2066,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "没有局部until或OR终点片段/结构，不能借整句回退计text_only。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "until daemon restarts与or container is manually restarted分别完整保存在unmodeled片段，持续到二选一终点的组合及同一container身份未建模。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；until的两个OR结束点与同一container关系无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "until daemon restarts与or container is manually restarted分别完整保存在unmodeled片段，持续到二选一终点的组合及同一container身份未建模。"
+              "judgment": "text_only"
             }
           }
         }
@@ -2344,20 +2124,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "无restart policies主语或frame；to containers和apply挂接的PP观察不够完整恢复主适用关系。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "missing",
-              "reason_zh": "没有任何frame或局部restart policies主语。唯一PP库存保留apply→to containers的parser挂接，不能恢复完整政策适用关系；只在整句回退中找到主体不计局部恢复。"
+              "judgment": "missing"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；restart policies对containers的适用关系无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "没有任何frame或局部restart policies主语。唯一PP库存保留apply→to containers的parser挂接，不能恢复完整政策适用关系；只在整句回退中找到主体不计局部恢复。"
+              "judgment": "missing"
             }
           }
         },
@@ -2378,20 +2154,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "missing",
-              "reason_zh": "only未进入任何局部候选，整句含only不计语义或局部文字保留。"
+              "judgment": "missing"
             },
             "v11_plain": {
-              "judgment": "missing",
-              "reason_zh": "only没有进入局部qualifier/scope/evidence；仅整句含only，不能算已保留或已确定容器限定范围。"
+              "judgment": "missing"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；only限定适用对象的排他范围无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "only没有进入局部qualifier/scope/evidence；仅整句含only，不能算已保留或已确定容器限定范围。"
+              "judgment": "missing"
             }
           }
         }
@@ -2440,20 +2212,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "Docker/restart/container及it/exit存在，但it与同一container身份没有显式链接。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "Docker→restart→container主关系正确，条件exit的it明确未消解，未建立it与同一container的身份关联。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "partial",
-              "reason_zh": "Docker—restarts—container主干正确，但没有条件中的it及其与同一container的链接；固定要求的共指部分缺失。"
+              "judgment": "partial"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "Docker→restart→container主关系正确，条件exit的it明确未消解，未建立it与同一container的身份关联。"
+              "judgment": "partial"
             }
           }
         },
@@ -2474,20 +2242,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "exit条件frame与未决if存在，OR后另一事件仅在局部文字里，完整备选条件未解释。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "exit条件frame和if候选存在，完整OR条件在condition_evidence中；另一daemon restart及OR组合未解释，if也明确unresolved。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "container exit、daemon restart及OR条件全部不在三元组中。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "exit子frame与另一daemon-restart词面仍存在，但原未决if及condition_evidence已删除；OR的完整条件组合和到主restart的连接未恢复。"
+              "judgment": "partial"
             }
           }
         },
@@ -2508,20 +2272,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "but not if you stopped the container yourself保存在unmodeled条件片段，未成为覆盖整组OR的例外。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "but not if you stopped the container yourself完整保存在unmodeled/condition_evidence，尚未作为覆盖两个OR分支的例外。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "manual stopping的例外及其覆盖整个OR行为的范围均未输出。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "but not if you stopped the container yourself完整保存在unmodeled/condition_evidence，尚未作为覆盖两个OR分支的例外。"
+              "judgment": "text_only"
             }
           }
         }
@@ -2562,20 +2322,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "Docker/provide/restart policies主谓宾完整。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "Docker/provide/restart policies主宾关系完整。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "partial",
-              "reason_zh": "Docker—provides—policies关系保留，但policies缺restart限定，不满足完整对象要求。"
+              "judgment": "partial"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "Docker/provide/restart policies主宾关系完整。"
+              "judgment": "retained"
             }
           }
         },
@@ -2596,20 +2352,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "control whether containers start automatically在局部unmodeled目的子树，未形成非断言控制关系。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "control whether…start automatically只在未解释目的子树中，未建立政策控制的非断言结果；没有将start提升为独立事件。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "control whether/start automatically的目的及非断言内容均未进入payload。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "control whether…start automatically只在未解释目的子树中，未建立政策控制的非断言结果；没有将start提升为独立事件。"
+              "judgment": "text_only"
             }
           }
         },
@@ -2630,20 +2382,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "when they exit OR Docker restarts文字在同一子树，未解释they、OR和触发范围。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "when they exit OR when Docker restarts在同一未解释片段，they指代、OR及条件作用域均未建模。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "container exit OR Docker restart及they共指未输出。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "when they exit OR when Docker restarts在同一未解释片段，they指代、OR及条件作用域均未建模。"
+              "judgment": "text_only"
             }
           }
         }
@@ -2684,20 +2432,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "Docker—recommend存在，未变must；受话者和协调建议内容仍unmodeled，完整归属不全。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "Docker→recommend正确，recommend未变为must；受话者you及两个被推荐内容仍在unmodeled补语中，没有完整建议归属关系。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；Docker对addressee的建议归属无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "Docker→recommend正确，recommend未变为must；受话者you及两个被推荐内容仍在unmodeled补语中，没有完整建议归属关系。"
+              "judgment": "partial"
             }
           }
         },
@@ -2718,20 +2462,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "use restart policies文字位于unmodeled补语，没有受recommend支配的动作。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "use restart policies在未解释推荐内容片段，没有受recommend支配的动作结构。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；受recommend支配的use policies动作无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "use restart policies在未解释推荐内容片段，没有受recommend支配的动作结构。"
+              "judgment": "text_only"
             }
           }
         },
@@ -2752,20 +2492,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "avoid using process managers to start containers文字完整，avoid/purpose/and组合未解释。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "avoid using process managers to start containers词面完整，但avoid、purpose以及与另一建议的and组合未建模。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；avoid using managers以及start containers目的无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "avoid using process managers to start containers词面完整，但avoid、purpose以及与另一建议的and组合未建模。"
+              "judgment": "text_only"
             }
           }
         }
@@ -2806,20 +2542,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "Restart policies—different状态正确，第二比较对象仅在未决from片段，二元区别未完整建立。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "Restart policies→different状态正确；from的第二比较对象仍unmodeled，未表达完整二元区别关系。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；restart policies与flag的二元区别关系无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "Restart policies→different状态正确；from的第二比较对象仍unmodeled，未表达完整二元区别关系。"
+              "judgment": "partial"
             }
           }
         },
@@ -2840,20 +2572,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "--live-restore flag of dockerd command完整在未决片段，比较对象和owner关系没有语义绑定。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "完整--live-restore flag of the dockerd command保存在unmodeled片段；比较对象及flag属于dockerd的关系未绑定。两模式都未误切成语义否定。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；完整--live-restore及其dockerd所有关系无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "完整--live-restore flag of the dockerd command保存在unmodeled片段；比较对象及flag属于dockerd的关系未绑定。当前消融也未误切成语义否定。"
+              "judgment": "text_only"
             }
           }
         }
@@ -2894,20 +2622,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "let/you的局部使能线索保留，Using flag主体与keep补语均未解释，完整能力关系不全。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "let→you局部使能线索保留，但Using --live-restore作为csubj与keep containers running补语均unmodeled，不能表达完整启用能力。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；使用--live-restore保持容器运行的使能能力无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "let→you局部使能线索保留，但Using --live-restore作为csubj与keep containers running补语均unmodeled，不能表达完整启用能力。"
+              "judgment": "partial"
             }
           }
         },
@@ -2928,20 +2652,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "during Docker upgrade在keep局部片段内，没有持续运行时间绑定。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "during a Docker upgrade完整存在于keep未解释子树，未绑定持续运行的时间范围。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；during Docker upgrade的范围无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "during a Docker upgrade完整存在于keep未解释子树，未绑定持续运行的时间范围。"
+              "judgment": "text_only"
             }
           }
         },
@@ -2962,20 +2682,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "though networking AND user input interrupted保存在片段，但让步、AND和被动状态未建模。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "though networking AND user input are interrupted在同一未解释子树，未建立让步、被动状态及两个受影响项目的AND关系。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；networking AND user input中断的让步限制无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "though networking AND user input are interrupted在同一未解释子树，未建立让步、被动状态及两个受影响项目的AND关系。"
+              "judgment": "text_only"
             }
           }
         }
@@ -3016,20 +2732,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "To configure restart policy for container作为完整unmodeled片段，未链接use的purpose。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "plain仅保存完整To configure…for a container未解释片段，因--restart未形成对象，未产出purpose结构。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；configure container restart policy的用途无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "plain仅保存完整To configure…for a container未解释片段，因--restart未形成对象，未产出purpose结构。"
+              "judgment": "text_only"
             }
           }
         },
@@ -3050,20 +2762,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "use的frame存在，但完整--restart flag只在unmodeled片段而非对象，参数指令绑定未完成。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "use祈使frame存在，但--restart flag只在unmodeled片段，未形成该指令对象。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；使用完整--restart flag的指令无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "use祈使frame存在，但--restart flag只在unmodeled片段，未形成该指令对象。"
+              "judgment": "text_only"
             }
           }
         },
@@ -3084,20 +2792,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "when using docker run command完整在unmodeled中，未成为use的when语义上下文。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "when using the docker run command完整存在unmodeled，尚未为use flag建when上下文。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；when using docker run的上下文无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "when using the docker run command完整存在unmodeled，尚未为use flag建when上下文。"
+              "judgment": "text_only"
             }
           }
         }
@@ -3146,20 +2850,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "following command/start/Redis container主动作与限定对象完整；保留following原mention，具体外部命令另评。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "following command/start/Redis container结构完整；following原文及未决外部指代保留，本要求不要求补具体命令。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "partial",
-              "reason_zh": "command—starts—container保留语法关系，但following和Redis均丢失，既缺原指示身份又缺对象限定。"
+              "judgment": "partial"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "following command/start/Redis container结构完整；following原文及未决外部指代保留，本要求不要求补具体命令。"
+              "judgment": "retained"
             }
           }
         },
@@ -3180,20 +2880,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "完整unless-stopped restart policy在with局部片段/PP中，但配置绑定未解释；没有误输出unless自然语言条件。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "完整with the unless-stopped restart policy保存在unmodeled及PP库存；parser内部把unless/stopped当自然语言，语义configuration绑定未支持，但没有实际输出unless条件。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "unless-stopped restart policy及容器配置绑定完全未输出。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "完整with the unless-stopped restart policy保存在unmodeled及PP库存；parser内部把unless/stopped当自然语言，语义configuration绑定未支持，但没有实际输出unless条件。"
+              "judgment": "text_only"
             }
           }
         }
@@ -3242,20 +2938,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "shut及running containers对象保留，但down未解释，it未关联Docker daemon，完整动作/身份不全。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "shut与running containers对象正确，running限定完整；down只在unmodeled且it未消解到Docker daemon，完整shutdown动作/身份未恢复。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "partial",
-              "reason_zh": "it—shuts—containers保留中心词关系；down、running和it对Docker daemon的身份链接均丢失。"
+              "judgment": "partial"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "shut与running containers对象正确，running限定完整；down只在unmodeled且it未消解到Docker daemon，完整shutdown动作/身份未恢复。"
+              "judgment": "partial"
             }
           }
         },
@@ -3276,20 +2968,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "when daemon terminates完整在未决片段，未建立terminate条件或时间关系。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "when the Docker daemon terminates完整保存在unmodeled，没有terminate条件frame或与shutdown的时间/条件连接。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "when daemon terminates的条件/时间依赖没有输出。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "when the Docker daemon terminates完整保存在unmodeled，没有terminate条件frame或与shutdown的时间/条件连接。"
+              "judgment": "text_only"
             }
           }
         },
@@ -3310,20 +2998,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "By default有局部cue，但interpretation_status unresolved，未形成default-over-when组合。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "By default虽有default类型，interpretation_status仍unresolved，default(when,shutdown)组合未建立，不能把cue标签本身当正确范围。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "by default及其与when和shutdown的范围组合均缺失。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "By default节点已删，只有when与down未决片段留下；没有默认行为的局部证据或范围结构。"
+              "judgment": "missing"
             }
           }
         }
@@ -3372,20 +3056,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "字面You第二人称与configure/daemon主宾关系完整；can在父frame，未声称已经配置，不要求新mention标签。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "you是document_addressee，configure及daemon对象关联正确；frame不声称已经配置。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "retained",
-              "reason_zh": "You—configure—daemon完整保留本项binding规定的受话者/动作/对象主干；这是评价用语法关系而非已配置断言。can的力度由独立r2审查，不重复要求本项提供模态节点。"
+              "judgment": "retained"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "按原label/binding的参与者单位，You仍是document_addressee，configure—daemon关系完整且非已发生断言；can的缺失在本目标r2单列。"
+              "judgment": "retained"
             }
           }
         },
@@ -3406,20 +3086,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "can possibility明确绑定configure，未成为义务或执行事实。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "can按supported possibility绑定configure，未变成义务；未定modal_flavor不影响此处可行性力度。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "payload没有can或可能性关系，不能以没有义务字段替代正面的能力含义。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "can节点被删除，没有局部capability/possibility字段；configure动作本身不能补出可用能力。"
+              "judgment": "missing"
             }
           }
         },
@@ -3440,20 +3116,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "so that containers remain running在unmodeled中，未连接成配置的目的/效果。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "so that containers remain running只在unmodeled子树，未表示保持运行及与configure的目的/效果关系。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "so that containers remain running的内容及与configure的目的/效果连接未输出。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "so that containers remain running只在unmodeled子树，未表示保持运行及与configure的目的/效果关系。"
+              "judgment": "text_only"
             }
           }
         },
@@ -3474,20 +3146,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "if daemon unavailable在同一局部片段，未绑定remain running；没有错误移到configure。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "if daemon becomes unavailable保存在同一未解释子树，未绑定remain running。没有错误提升成只能在daemon不可用时configure。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "daemon becomes unavailable及限定continued-running的if范围未输出。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "if daemon becomes unavailable保存在同一未解释子树，未绑定remain running。没有错误提升成只能在daemon不可用时configure。"
+              "judgment": "text_only"
             }
           }
         }
@@ -3528,20 +3196,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "Restart原形动作保留且非独立断言，无显式actor；目标要求接受操作描述，不强制新版imperative字段。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "Restart标imperative及implicit_addressee，没有虚构显式you span或已完成事件。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；Restart原形操作步骤无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "Restart标imperative及implicit_addressee，没有虚构显式you span或已完成事件。"
+              "judgment": "retained"
             }
           }
         },
@@ -3562,20 +3226,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "完整Docker daemon是restart对象，没有换成container或host。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "对象是完整Docker daemon，未混为containers或宿主机。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；Docker daemon对象无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "对象是完整Docker daemon，未混为containers或宿主机。"
+              "judgment": "retained"
             }
           }
         }
@@ -3616,20 +3276,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "you/start/dockerd process和can关系完整，字面第二人称保持原参与者，没有把dockerd变成动作。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "you/start/dockerd process关系完整，dockerd没有误判为另一动作，can与start相连。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "partial",
-              "reason_zh": "you—start—process主干保留，但dockerd对象限定丢失，不能知道被启动的是哪个进程。"
+              "judgment": "partial"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "按原label/binding的参与者单位，you—start—dockerd process关系完整；dockerd不是第二谓词。can缺失在r3单列，非断言标志仍保留。"
+              "judgment": "retained"
             }
           }
         },
@@ -3650,20 +3306,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "you/prefer条件frame及if候选存在，但condition_status partial且if unresolved，可选偏好框架未完全建立；并未强称only-if。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "if把完整you prefer接到带can的start候选，保留偏好下的可选行为；未声称only-if/necessary技术前提。无需强制新增会话条件专属类型才能保留此原意。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "If you prefer的偏好和可选分支框架没有输出。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "you—prefer子frame仍在，但if及can已删，没有把偏好连接为可选手动启动的框架；不能把prefer独立存在算可选关系。"
+              "judgment": "partial"
             }
           }
         },
@@ -3684,20 +3336,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "retained",
-              "reason_zh": "can以possibility绑定start，不是义务、禁止或已执行。"
+              "judgment": "retained"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "can以possibility绑定start，未输出义务/禁止/执行事实。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "can的可用替代能力没有输出；三元组不是模态关系。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "can被删除，start关系与manually不能表达可选能力，而非义务/禁止的区别。"
+              "judgment": "missing"
             }
           }
         },
@@ -3718,20 +3366,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "manually只有unmodeled cue，尚未解释为start的方式限定。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "retained",
-              "reason_zh": "manually以supported manner绑定start。"
+              "judgment": "retained"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "manually方式限定未输出。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "retained",
-              "reason_zh": "manually以supported manner绑定start。"
+              "judgment": "retained"
             }
           }
         },
@@ -3752,20 +3396,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "完整--live-restore flag保存在with片段/PP，尚未解释成start选项/配置。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "完整--live-restore flag在未解释with片段和PP库存；尚未把该flag解释为启动选项/配置，未误套git命令方法。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "--live-restore flag及with到start的绑定未输出。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "完整--live-restore flag在未解释with片段和PP库存；尚未把该flag解释为启动选项/配置，未误套git命令方法。"
+              "judgment": "text_only"
             }
           }
         }
@@ -3806,20 +3446,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "Live restore/allow有主frame，但you/keep containers running仍unmodeled，使能与持续运行关系不全。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "Live restore→allows主关系有frame，you及keep containers running仍为unmodeled，未形成使能的完整持续运行内容。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；live restore使能keep running的关系无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "Live restore→allows主关系有frame，you及keep containers running仍为unmodeled，未形成使能的完整持续运行内容。"
+              "judgment": "partial"
             }
           }
         },
@@ -3840,20 +3476,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "across Docker daemon updates在keep片段，未绑定持续运行的跨度。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "across Docker daemon updates在keep子树内词面完整，但尚未绑定持续运行的事件/时间跨度。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；across updates的持续运行范围无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "across Docker daemon updates在keep子树内词面完整，但尚未绑定持续运行的事件/时间跨度。"
+              "judgment": "text_only"
             }
           }
         },
@@ -3874,20 +3506,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "patch YY.MM.x、only和when都保留在unmodeled并列子树，support状态及支持范围未解释。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "only supported when installing patch releases及YY.MM.x完整在未解释并列子树；未有support状态、only范围、when关系或继承Live restore主语。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；only patch YY.MM.x的支持边界无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "only supported when installing patch releases及YY.MM.x完整在未解释并列子树；未有support状态、only范围、when关系或继承Live restore主语。"
+              "judgment": "text_only"
             }
           }
         },
@@ -3908,20 +3536,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "text_only",
-              "reason_zh": "not for major YY.MM升级完整在局部片段，没有负支持范围语义；未实际承诺major支持。"
+              "judgment": "text_only"
             },
             "v11_plain": {
-              "judgment": "text_only",
-              "reason_zh": "not for major (YY.MM) daemon upgrades完整保存在同一unmodeled子树，未将否定支持范围绑定support；当前并未输出major支持或物理不可能。"
+              "judgment": "text_only"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "本方法triples为空；not major YY.MM的支持排除无输出。全文/原始解析不能补局部抽取分数。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "text_only",
-              "reason_zh": "not for major (YY.MM) daemon upgrades完整保存在同一unmodeled子树，未将否定支持范围绑定support；当前并未输出major支持或物理不可能。"
+              "judgment": "text_only"
             }
           }
         }
@@ -3962,20 +3586,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "you/skip/releases和if候选存在，但during upgrade未解释、if未决，完整前提关系不全。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "you/skip/releases条件frame和if候选已保存；during an upgrade未解释，condition_status partial、if unresolved，完整升级期间条件未完成。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "skip releases during upgrade的完整前提没有进入payload。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "you—skip—releases与during an upgrade未决文字还在；if节点已删，完整条件与reconnection risk的绑定未表达。"
+              "judgment": "partial"
             }
           }
         },
@@ -4004,20 +3624,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "daemon/restore/its connection基本关系保留；its归属和to containers的connection关系未解。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "daemon/restore/its connection基础关系保留；its所有者未消解，to containers仍unmodeled且parser挂restore，没有建立connection与containers关系。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "partial",
-              "reason_zh": "daemon—restore—connection关系正确，未把containers误作restored对象；但its所属关系及connection-to-containers绑定均缺失。"
+              "judgment": "partial"
             },
             "scope_removed_plain": {
-              "judgment": "partial",
-              "reason_zh": "daemon/restore/its connection基础关系保留；its所有者未消解，to containers仍unmodeled且parser挂restore，没有建立connection与containers关系。"
+              "judgment": "partial"
             }
           }
         },
@@ -4038,20 +3654,16 @@
           ],
           "development_reviews": {
             "v05_plain": {
-              "judgment": "partial",
-              "reason_zh": "not作为局部否定保留，may和if明确未决，没有完整possible(not restore)条件组合，也未输出禁止。"
+              "judgment": "partial"
             },
             "v11_plain": {
-              "judgment": "partial",
-              "reason_zh": "not正确作为restore的negation保留，may明确unresolved；未表达possible(not restore)及与条件组合，也没有实际承诺prohibition或certain failure。"
+              "judgment": "partial"
             },
             "svo_plain": {
-              "judgment": "missing",
-              "reason_zh": "may/not和if组合全部没有输出，无法表达给定条件下可能无法恢复。"
+              "judgment": "missing"
             },
             "scope_removed_plain": {
-              "judgment": "missing",
-              "reason_zh": "may、not及if均被删；restore骨架不能表示条件下可能无法恢复连接，整句回退不计局部恢复。"
+              "judgment": "missing"
             }
           }
         }
