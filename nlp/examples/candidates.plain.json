@@ -1,0 +1,6673 @@
+{
+  "schema_version": "libri-b-candidate-0.11-local",
+  "schema_status": "local_proposal_not_OCaml_importer_verified",
+  "rule_version": "libri-b-local-0.11",
+  "offset_convention": "Unicode code points in input.text, zero-based half-open; not UTF-8 bytes or original-file offsets",
+  "artifact_type": "first_team_update_selected_development_records_not_gold",
+  "records": [
+    {
+      "id": "docker-restart-prerequisite-001",
+      "kind": "real_document_development_diagnostic",
+      "input": {
+        "id": "docker-restart-prerequisite-001",
+        "kind": "real_document_development_diagnostic",
+        "document_group": "docker-restart-policies",
+        "text": "A restart policy only takes effect after a container starts successfully. In this case, starting successfully means that the container is up for at least 10 seconds and Docker has started monitoring it. This prevents a container which doesn't start at all from going into a restart loop.",
+        "target_span": [
+          0,
+          73
+        ],
+        "context_policy": "Entire selected prose paragraph/list item is parser input; only target_span is evaluated. The source section identifies option/example context, not an inferred universal behavior.",
+        "source": {
+          "file": "sources/docker-restart-2026-11-06/start-containers-automatically.md",
+          "file_sha256": "51c7adf0856eb5ecc91a9d9f9b9567c75fbefa02d02abdfd5c3ec50c535a1881",
+          "url": "https://docs.docker.com/engine/containers/start-containers-automatically/",
+          "revision": "dc98e192e7879ab36c55905844feda9685487324",
+          "format": "Markdown",
+          "license_snapshot": "sources/docker-restart-2026-11-06/LICENSE",
+          "section": "Restart policy details",
+          "raw_lines_inclusive": [
+            61,
+            64
+          ],
+          "raw_paragraph_span": [
+            4131,
+            4426
+          ],
+          "raw_paragraph_sha256": "2ffdb51c6e68c7c2043926d493fedef09571601bd12ea6fa5cd853cf98f7cb73"
+        },
+        "preparation": {
+          "method": "Select full prose paragraph/list item (omit option term labels); remove initial bullet marker and backticks, render inline Markdown links as their labels, collapse whitespace. Preserve original words; no paraphrasing.",
+          "character_unit": "Unicode code points",
+          "interval": "zero-based half-open",
+          "source_mapping": "paragraph-level raw span only; no per-token original-file mapping",
+          "text_sha256": "441c82403c8d6b32678b6b2be52937a23c04e378d7e58ae854676297a0559e49",
+          "script_sha256": "048b49e3d24e0224d2b72af04261da5d90142237b7d12b6062bd847f8fc7a147"
+        },
+        "annotation_status": "assistant-authored expectations stored separately; not independently annotated gold",
+        "split_policy": "development_only; exclude the entire document_group from later held-out evaluation",
+        "recorded_on": "2026-11-06",
+        "source_code": {
+          "version": "libri-inline-code-0.1",
+          "raw_paragraph": "- A restart policy only takes effect after a container starts successfully. In\n  this case, starting successfully means that the container is up for at least\n  10 seconds and Docker has started monitoring it. This prevents a container\n  which doesn't start at all from going into a restart loop.",
+          "raw_sha256": "2ffdb51c6e68c7c2043926d493fedef09571601bd12ea6fa5cd853cf98f7cb73",
+          "text_sha256": "441c82403c8d6b32678b6b2be52937a23c04e378d7e58ae854676297a0559e49",
+          "plain_to_raw": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            174,
+            175,
+            176,
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259,
+            260,
+            261,
+            262,
+            263,
+            264,
+            265,
+            266,
+            267,
+            268,
+            269,
+            270,
+            271,
+            272,
+            273,
+            274,
+            275,
+            276,
+            277,
+            278,
+            279,
+            280,
+            281,
+            282,
+            283,
+            284,
+            285,
+            286,
+            287,
+            288,
+            289,
+            290,
+            291,
+            292,
+            293,
+            294
+          ],
+          "spans": [],
+          "meaning": "source_inline_code_not_semantic_command_label"
+        }
+      },
+      "runtime_status": "ok",
+      "candidate": {
+        "status": "pattern_covered",
+        "reasons": [],
+        "frames": [
+          {
+            "id": "f1",
+            "kind": "event",
+            "head_word_id": 5,
+            "voice": "active",
+            "clause_form": "unspecified",
+            "subject_status": "explicit",
+            "predicate": {
+              "text": "takes effect",
+              "spans": [
+                [
+                  22,
+                  34
+                ]
+              ],
+              "word_ids": [
+                5,
+                6
+              ],
+              "lemma": "take effect"
+            },
+            "roles": [
+              {
+                "role": "subject",
+                "phrase": {
+                  "text": "restart policy",
+                  "spans": [
+                    [
+                      2,
+                      16
+                    ]
+                  ],
+                  "word_ids": [
+                    2,
+                    3
+                  ]
+                },
+                "head_word_id": 3,
+                "syntactic_relation": "nsubj",
+                "mention_type": "nominal",
+                "reference_status": "source_mention_only"
+              }
+            ],
+            "qualifier_ids": [
+              "q2"
+            ],
+            "is_independent_assertion": false
+          },
+          {
+            "id": "f2",
+            "kind": "event",
+            "head_word_id": 10,
+            "voice": "active",
+            "clause_form": "unspecified",
+            "subject_status": "explicit",
+            "predicate": {
+              "text": "starts",
+              "spans": [
+                [
+                  53,
+                  59
+                ]
+              ],
+              "word_ids": [
+                10
+              ],
+              "lemma": "start"
+            },
+            "roles": [
+              {
+                "role": "subject",
+                "phrase": {
+                  "text": "container",
+                  "spans": [
+                    [
+                      43,
+                      52
+                    ]
+                  ],
+                  "word_ids": [
+                    9
+                  ]
+                },
+                "head_word_id": 9,
+                "syntactic_relation": "nsubj",
+                "mention_type": "nominal",
+                "reference_status": "source_mention_only"
+              }
+            ],
+            "qualifier_ids": [
+              "q1"
+            ],
+            "is_independent_assertion": false
+          }
+        ],
+        "qualifiers": [
+          {
+            "id": "q1",
+            "kind": "manner",
+            "cue": {
+              "text": "successfully",
+              "spans": [
+                [
+                  60,
+                  72
+                ]
+              ],
+              "word_ids": [
+                11
+              ]
+            },
+            "target": "f2",
+            "interpretation_status": "supported"
+          },
+          {
+            "id": "q2",
+            "kind": "only_after",
+            "cue": {
+              "text": "only after",
+              "spans": [
+                [
+                  17,
+                  21
+                ],
+                [
+                  35,
+                  40
+                ]
+              ],
+              "word_ids": [
+                4,
+                7
+              ]
+            },
+            "target": "f1",
+            "interpretation_status": "supported",
+            "condition_frame": "f2",
+            "condition_evidence": {
+              "text": "a container starts successfully",
+              "spans": [
+                [
+                  41,
+                  72
+                ]
+              ],
+              "word_ids": [
+                8,
+                9,
+                10,
+                11
+              ]
+            },
+            "condition_structure": {
+              "kind": "frame",
+              "frame": "f2"
+            },
+            "condition_status": "pattern_covered",
+            "unresolved_reasons": []
+          }
+        ],
+        "pp_candidates": [],
+        "candidate_structure": {
+          "kind": "conditional",
+          "relation": "only_after",
+          "condition": "f2",
+          "condition_structure": {
+            "kind": "frame",
+            "frame": "f2"
+          },
+          "consequent": {
+            "kind": "frame",
+            "frame": "f1"
+          },
+          "direction": "main_requires_condition",
+          "does_not_assert_condition_or_main_occurrence": true
+        },
+        "evidence": {
+          "text": "A restart policy only takes effect after a container starts successfully.",
+          "spans": [
+            [
+              0,
+              73
+            ]
+          ],
+          "word_ids": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        "assertion_policy": "source_required"
+      },
+      "variants": {
+        "literal_svo": {
+          "variant": "literal_svo_heads",
+          "triples": [
+            {
+              "subject": {
+                "text": "policy",
+                "lemma": "policy",
+                "spans": [
+                  [
+                    10,
+                    16
+                  ]
+                ],
+                "word_ids": [
+                  3
+                ]
+              },
+              "verb": {
+                "text": "takes",
+                "lemma": "take",
+                "spans": [
+                  [
+                    22,
+                    27
+                  ]
+                ],
+                "word_ids": [
+                  5
+                ]
+              },
+              "object": {
+                "text": "effect",
+                "lemma": "effect",
+                "spans": [
+                  [
+                    28,
+                    34
+                  ]
+                ],
+                "word_ids": [
+                  6
+                ]
+              }
+            }
+          ],
+          "note": "Drops modifiers and scope by design; evaluation only, not a safe user-facing claim."
+        },
+        "frames_without_scope": {
+          "variant": "frames_without_scope",
+          "frames": [
+            {
+              "id": "f1",
+              "kind": "event",
+              "head_word_id": 5,
+              "voice": "active",
+              "clause_form": "unspecified",
+              "subject_status": "explicit",
+              "predicate": {
+                "text": "takes effect",
+                "spans": [
+                  [
+                    22,
+                    34
+                  ]
+                ],
+                "word_ids": [
+                  5,
+                  6
+                ],
+                "lemma": "take effect"
+              },
+              "roles": [
+                {
+                  "role": "subject",
+                  "phrase": {
+                    "text": "restart policy",
+                    "spans": [
+                      [
+                        2,
+                        16
+                      ]
+                    ],
+                    "word_ids": [
+                      2,
+                      3
+                    ]
+                  },
+                  "head_word_id": 3,
+                  "syntactic_relation": "nsubj",
+                  "mention_type": "nominal",
+                  "reference_status": "source_mention_only"
+                }
+              ],
+              "is_independent_assertion": false
+            },
+            {
+              "id": "f2",
+              "kind": "event",
+              "head_word_id": 10,
+              "voice": "active",
+              "clause_form": "unspecified",
+              "subject_status": "explicit",
+              "predicate": {
+                "text": "starts",
+                "spans": [
+                  [
+                    53,
+                    59
+                  ]
+                ],
+                "word_ids": [
+                  10
+                ],
+                "lemma": "start"
+              },
+              "roles": [
+                {
+                  "role": "subject",
+                  "phrase": {
+                    "text": "container",
+                    "spans": [
+                      [
+                        43,
+                        52
+                      ]
+                    ],
+                    "word_ids": [
+                      9
+                    ]
+                  },
+                  "head_word_id": 9,
+                  "syntactic_relation": "nsubj",
+                  "mention_type": "nominal",
+                  "reference_status": "source_mention_only"
+                }
+              ],
+              "is_independent_assertion": false
+            }
+          ],
+          "ablation_definition": "all_qualifiers_removed_including_manner_time_result_configuration_method_destination_purpose",
+          "qualifiers": [],
+          "candidate_structure": null,
+          "parent_status": "pattern_covered",
+          "scope_ablation_eligible": true,
+          "note": "Same frame inventory and eligibility as full variant; all qualifiers removed, including time/result/configuration/method/destination and nested purpose as well as scope. Legacy key kept for compatibility. Score this payload, not raw evidence. Eligibility is NOT a dataset filter; all inputs remain in denominators. Partial fragments are diagnostic only."
+        },
+        "scope_operators_removed": {
+          "variant": "scope_operators_removed",
+          "removed_kinds": [
+            "default",
+            "if",
+            "modal",
+            "negation",
+            "only_after",
+            "purpose",
+            "unresolved_condition"
+          ],
+          "frames": [
+            {
+              "id": "f1",
+              "kind": "event",
+              "head_word_id": 5,
+              "voice": "active",
+              "clause_form": "unspecified",
+              "subject_status": "explicit",
+              "predicate": {
+                "text": "takes effect",
+                "spans": [
+                  [
+                    22,
+                    34
+                  ]
+                ],
+                "word_ids": [
+                  5,
+                  6
+                ],
+                "lemma": "take effect"
+              },
+              "roles": [
+                {
+                  "role": "subject",
+                  "phrase": {
+                    "text": "restart policy",
+                    "spans": [
+                      [
+                        2,
+                        16
+                      ]
+                    ],
+                    "word_ids": [
+                      2,
+                      3
+                    ]
+                  },
+                  "head_word_id": 3,
+                  "syntactic_relation": "nsubj",
+                  "mention_type": "nominal",
+                  "reference_status": "source_mention_only"
+                }
+              ],
+              "qualifier_ids": [],
+              "is_independent_assertion": false
+            },
+            {
+              "id": "f2",
+              "kind": "event",
+              "head_word_id": 10,
+              "voice": "active",
+              "clause_form": "unspecified",
+              "subject_status": "explicit",
+              "predicate": {
+                "text": "starts",
+                "spans": [
+                  [
+                    53,
+                    59
+                  ]
+                ],
+                "word_ids": [
+                  10
+                ],
+                "lemma": "start"
+              },
+              "roles": [
+                {
+                  "role": "subject",
+                  "phrase": {
+                    "text": "container",
+                    "spans": [
+                      [
+                        43,
+                        52
+                      ]
+                    ],
+                    "word_ids": [
+                      9
+                    ]
+                  },
+                  "head_word_id": 9,
+                  "syntactic_relation": "nsubj",
+                  "mention_type": "nominal",
+                  "reference_status": "source_mention_only"
+                }
+              ],
+              "qualifier_ids": [
+                "q1"
+              ],
+              "is_independent_assertion": false
+            }
+          ],
+          "qualifiers": [
+            {
+              "id": "q1",
+              "kind": "manner",
+              "cue": {
+                "text": "successfully",
+                "spans": [
+                  [
+                    60,
+                    72
+                  ]
+                ],
+                "word_ids": [
+                  11
+                ]
+              },
+              "target": "f2",
+              "interpretation_status": "supported"
+            }
+          ],
+          "candidate_structure": null,
+          "parent_status": "pattern_covered",
+          "scope_ablation_eligible": true,
+          "note": "Evaluation-only ablation: removes selected negation/modal/condition/default operators, including unresolved_condition and nested purpose; retains manner/time/result/configuration/method/destination content. Unmodeled cue text, purpose text and condition frames can remain: this is node removal, not erasure of all scope information. Same input/frame denominator. No independent assertions or safe user-facing claims."
+        }
+      },
+      "syntax": [
+        {
+          "sentence_id": 1,
+          "text": "A restart policy only takes effect after a container starts successfully.",
+          "tokens": [
+            {
+              "id": [
+                1
+              ],
+              "text": "A",
+              "start_char": 0,
+              "end_char": 1,
+              "word_ids": [
+                1
+              ]
+            },
+            {
+              "id": [
+                2
+              ],
+              "text": "restart",
+              "start_char": 2,
+              "end_char": 9,
+              "word_ids": [
+                2
+              ]
+            },
+            {
+              "id": [
+                3
+              ],
+              "text": "policy",
+              "start_char": 10,
+              "end_char": 16,
+              "word_ids": [
+                3
+              ]
+            },
+            {
+              "id": [
+                4
+              ],
+              "text": "only",
+              "start_char": 17,
+              "end_char": 21,
+              "word_ids": [
+                4
+              ]
+            },
+            {
+              "id": [
+                5
+              ],
+              "text": "takes",
+              "start_char": 22,
+              "end_char": 27,
+              "word_ids": [
+                5
+              ]
+            },
+            {
+              "id": [
+                6
+              ],
+              "text": "effect",
+              "start_char": 28,
+              "end_char": 34,
+              "word_ids": [
+                6
+              ]
+            },
+            {
+              "id": [
+                7
+              ],
+              "text": "after",
+              "start_char": 35,
+              "end_char": 40,
+              "word_ids": [
+                7
+              ]
+            },
+            {
+              "id": [
+                8
+              ],
+              "text": "a",
+              "start_char": 41,
+              "end_char": 42,
+              "word_ids": [
+                8
+              ]
+            },
+            {
+              "id": [
+                9
+              ],
+              "text": "container",
+              "start_char": 43,
+              "end_char": 52,
+              "word_ids": [
+                9
+              ]
+            },
+            {
+              "id": [
+                10
+              ],
+              "text": "starts",
+              "start_char": 53,
+              "end_char": 59,
+              "word_ids": [
+                10
+              ]
+            },
+            {
+              "id": [
+                11
+              ],
+              "text": "successfully",
+              "start_char": 60,
+              "end_char": 72,
+              "word_ids": [
+                11
+              ]
+            },
+            {
+              "id": [
+                12
+              ],
+              "text": ".",
+              "start_char": 72,
+              "end_char": 73,
+              "word_ids": [
+                12
+              ]
+            }
+          ],
+          "words": [
+            {
+              "id": 1,
+              "text": "A",
+              "lemma": "a",
+              "upos": "DET",
+              "xpos": "DT",
+              "feats": "Definite=Ind|PronType=Art",
+              "head": 3,
+              "deprel": "det",
+              "start_char": 0,
+              "end_char": 1
+            },
+            {
+              "id": 2,
+              "text": "restart",
+              "lemma": "restart",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 3,
+              "deprel": "compound",
+              "start_char": 2,
+              "end_char": 9
+            },
+            {
+              "id": 3,
+              "text": "policy",
+              "lemma": "policy",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 5,
+              "deprel": "nsubj",
+              "start_char": 10,
+              "end_char": 16
+            },
+            {
+              "id": 4,
+              "text": "only",
+              "lemma": "only",
+              "upos": "ADV",
+              "xpos": "RB",
+              "feats": null,
+              "head": 5,
+              "deprel": "advmod",
+              "start_char": 17,
+              "end_char": 21
+            },
+            {
+              "id": 5,
+              "text": "takes",
+              "lemma": "take",
+              "upos": "VERB",
+              "xpos": "VBZ",
+              "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+              "head": 0,
+              "deprel": "root",
+              "start_char": 22,
+              "end_char": 27
+            },
+            {
+              "id": 6,
+              "text": "effect",
+              "lemma": "effect",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 5,
+              "deprel": "obj",
+              "start_char": 28,
+              "end_char": 34
+            },
+            {
+              "id": 7,
+              "text": "after",
+              "lemma": "after",
+              "upos": "SCONJ",
+              "xpos": "IN",
+              "feats": null,
+              "head": 10,
+              "deprel": "mark",
+              "start_char": 35,
+              "end_char": 40
+            },
+            {
+              "id": 8,
+              "text": "a",
+              "lemma": "a",
+              "upos": "DET",
+              "xpos": "DT",
+              "feats": "Definite=Ind|PronType=Art",
+              "head": 9,
+              "deprel": "det",
+              "start_char": 41,
+              "end_char": 42
+            },
+            {
+              "id": 9,
+              "text": "container",
+              "lemma": "container",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 10,
+              "deprel": "nsubj",
+              "start_char": 43,
+              "end_char": 52
+            },
+            {
+              "id": 10,
+              "text": "starts",
+              "lemma": "start",
+              "upos": "VERB",
+              "xpos": "VBZ",
+              "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+              "head": 5,
+              "deprel": "advcl",
+              "start_char": 53,
+              "end_char": 59
+            },
+            {
+              "id": 11,
+              "text": "successfully",
+              "lemma": "successfully",
+              "upos": "ADV",
+              "xpos": "RB",
+              "feats": null,
+              "head": 10,
+              "deprel": "advmod",
+              "start_char": 60,
+              "end_char": 72
+            },
+            {
+              "id": 12,
+              "text": ".",
+              "lemma": ".",
+              "upos": "PUNCT",
+              "xpos": ".",
+              "feats": null,
+              "head": 5,
+              "deprel": "punct",
+              "start_char": 72,
+              "end_char": 73
+            }
+          ]
+        },
+        {
+          "sentence_id": 2,
+          "text": "In this case, starting successfully means that the container is up for at least 10 seconds and Docker has started monitoring it.",
+          "tokens": [
+            {
+              "id": [
+                1
+              ],
+              "text": "In",
+              "start_char": 74,
+              "end_char": 76,
+              "word_ids": [
+                1
+              ]
+            },
+            {
+              "id": [
+                2
+              ],
+              "text": "this",
+              "start_char": 77,
+              "end_char": 81,
+              "word_ids": [
+                2
+              ]
+            },
+            {
+              "id": [
+                3
+              ],
+              "text": "case",
+              "start_char": 82,
+              "end_char": 86,
+              "word_ids": [
+                3
+              ]
+            },
+            {
+              "id": [
+                4
+              ],
+              "text": ",",
+              "start_char": 86,
+              "end_char": 87,
+              "word_ids": [
+                4
+              ]
+            },
+            {
+              "id": [
+                5
+              ],
+              "text": "starting",
+              "start_char": 88,
+              "end_char": 96,
+              "word_ids": [
+                5
+              ]
+            },
+            {
+              "id": [
+                6
+              ],
+              "text": "successfully",
+              "start_char": 97,
+              "end_char": 109,
+              "word_ids": [
+                6
+              ]
+            },
+            {
+              "id": [
+                7
+              ],
+              "text": "means",
+              "start_char": 110,
+              "end_char": 115,
+              "word_ids": [
+                7
+              ]
+            },
+            {
+              "id": [
+                8
+              ],
+              "text": "that",
+              "start_char": 116,
+              "end_char": 120,
+              "word_ids": [
+                8
+              ]
+            },
+            {
+              "id": [
+                9
+              ],
+              "text": "the",
+              "start_char": 121,
+              "end_char": 124,
+              "word_ids": [
+                9
+              ]
+            },
+            {
+              "id": [
+                10
+              ],
+              "text": "container",
+              "start_char": 125,
+              "end_char": 134,
+              "word_ids": [
+                10
+              ]
+            },
+            {
+              "id": [
+                11
+              ],
+              "text": "is",
+              "start_char": 135,
+              "end_char": 137,
+              "word_ids": [
+                11
+              ]
+            },
+            {
+              "id": [
+                12
+              ],
+              "text": "up",
+              "start_char": 138,
+              "end_char": 140,
+              "word_ids": [
+                12
+              ]
+            },
+            {
+              "id": [
+                13
+              ],
+              "text": "for",
+              "start_char": 141,
+              "end_char": 144,
+              "word_ids": [
+                13
+              ]
+            },
+            {
+              "id": [
+                14
+              ],
+              "text": "at",
+              "start_char": 145,
+              "end_char": 147,
+              "word_ids": [
+                14
+              ]
+            },
+            {
+              "id": [
+                15
+              ],
+              "text": "least",
+              "start_char": 148,
+              "end_char": 153,
+              "word_ids": [
+                15
+              ]
+            },
+            {
+              "id": [
+                16
+              ],
+              "text": "10",
+              "start_char": 154,
+              "end_char": 156,
+              "word_ids": [
+                16
+              ]
+            },
+            {
+              "id": [
+                17
+              ],
+              "text": "seconds",
+              "start_char": 157,
+              "end_char": 164,
+              "word_ids": [
+                17
+              ]
+            },
+            {
+              "id": [
+                18
+              ],
+              "text": "and",
+              "start_char": 165,
+              "end_char": 168,
+              "word_ids": [
+                18
+              ]
+            },
+            {
+              "id": [
+                19
+              ],
+              "text": "Docker",
+              "start_char": 169,
+              "end_char": 175,
+              "word_ids": [
+                19
+              ]
+            },
+            {
+              "id": [
+                20
+              ],
+              "text": "has",
+              "start_char": 176,
+              "end_char": 179,
+              "word_ids": [
+                20
+              ]
+            },
+            {
+              "id": [
+                21
+              ],
+              "text": "started",
+              "start_char": 180,
+              "end_char": 187,
+              "word_ids": [
+                21
+              ]
+            },
+            {
+              "id": [
+                22
+              ],
+              "text": "monitoring",
+              "start_char": 188,
+              "end_char": 198,
+              "word_ids": [
+                22
+              ]
+            },
+            {
+              "id": [
+                23
+              ],
+              "text": "it",
+              "start_char": 199,
+              "end_char": 201,
+              "word_ids": [
+                23
+              ]
+            },
+            {
+              "id": [
+                24
+              ],
+              "text": ".",
+              "start_char": 201,
+              "end_char": 202,
+              "word_ids": [
+                24
+              ]
+            }
+          ],
+          "words": [
+            {
+              "id": 1,
+              "text": "In",
+              "lemma": "in",
+              "upos": "ADP",
+              "xpos": "IN",
+              "feats": null,
+              "head": 3,
+              "deprel": "case",
+              "start_char": 74,
+              "end_char": 76
+            },
+            {
+              "id": 2,
+              "text": "this",
+              "lemma": "this",
+              "upos": "DET",
+              "xpos": "DT",
+              "feats": "Number=Sing|PronType=Dem",
+              "head": 3,
+              "deprel": "det",
+              "start_char": 77,
+              "end_char": 81
+            },
+            {
+              "id": 3,
+              "text": "case",
+              "lemma": "case",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 7,
+              "deprel": "obl",
+              "start_char": 82,
+              "end_char": 86
+            },
+            {
+              "id": 4,
+              "text": ",",
+              "lemma": ",",
+              "upos": "PUNCT",
+              "xpos": ",",
+              "feats": null,
+              "head": 3,
+              "deprel": "punct",
+              "start_char": 86,
+              "end_char": 87
+            },
+            {
+              "id": 5,
+              "text": "starting",
+              "lemma": "start",
+              "upos": "VERB",
+              "xpos": "VBG",
+              "feats": "Tense=Pres|VerbForm=Part",
+              "head": 7,
+              "deprel": "advcl",
+              "start_char": 88,
+              "end_char": 96
+            },
+            {
+              "id": 6,
+              "text": "successfully",
+              "lemma": "successfully",
+              "upos": "ADV",
+              "xpos": "RB",
+              "feats": null,
+              "head": 7,
+              "deprel": "advmod",
+              "start_char": 97,
+              "end_char": 109
+            },
+            {
+              "id": 7,
+              "text": "means",
+              "lemma": "mean",
+              "upos": "VERB",
+              "xpos": "VBZ",
+              "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+              "head": 0,
+              "deprel": "root",
+              "start_char": 110,
+              "end_char": 115
+            },
+            {
+              "id": 8,
+              "text": "that",
+              "lemma": "that",
+              "upos": "SCONJ",
+              "xpos": "IN",
+              "feats": null,
+              "head": 17,
+              "deprel": "mark",
+              "start_char": 116,
+              "end_char": 120
+            },
+            {
+              "id": 9,
+              "text": "the",
+              "lemma": "the",
+              "upos": "DET",
+              "xpos": "DT",
+              "feats": "Definite=Def|PronType=Art",
+              "head": 10,
+              "deprel": "det",
+              "start_char": 121,
+              "end_char": 124
+            },
+            {
+              "id": 10,
+              "text": "container",
+              "lemma": "container",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 17,
+              "deprel": "nsubj",
+              "start_char": 125,
+              "end_char": 134
+            },
+            {
+              "id": 11,
+              "text": "is",
+              "lemma": "be",
+              "upos": "AUX",
+              "xpos": "VBZ",
+              "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+              "head": 17,
+              "deprel": "cop",
+              "start_char": 135,
+              "end_char": 137
+            },
+            {
+              "id": 12,
+              "text": "up",
+              "lemma": "up",
+              "upos": "ADP",
+              "xpos": "IN",
+              "feats": null,
+              "head": 17,
+              "deprel": "case",
+              "start_char": 138,
+              "end_char": 140
+            },
+            {
+              "id": 13,
+              "text": "for",
+              "lemma": "for",
+              "upos": "ADP",
+              "xpos": "IN",
+              "feats": null,
+              "head": 15,
+              "deprel": "case",
+              "start_char": 141,
+              "end_char": 144
+            },
+            {
+              "id": 14,
+              "text": "at",
+              "lemma": "at",
+              "upos": "ADP",
+              "xpos": "IN",
+              "feats": null,
+              "head": 15,
+              "deprel": "case",
+              "start_char": 145,
+              "end_char": 147
+            },
+            {
+              "id": 15,
+              "text": "least",
+              "lemma": "least",
+              "upos": "ADJ",
+              "xpos": "JJS",
+              "feats": "Degree=Sup",
+              "head": 16,
+              "deprel": "nmod",
+              "start_char": 148,
+              "end_char": 153
+            },
+            {
+              "id": 16,
+              "text": "10",
+              "lemma": "10",
+              "upos": "NUM",
+              "xpos": "CD",
+              "feats": "NumForm=Digit|NumType=Card",
+              "head": 17,
+              "deprel": "nummod",
+              "start_char": 154,
+              "end_char": 156
+            },
+            {
+              "id": 17,
+              "text": "seconds",
+              "lemma": "second",
+              "upos": "NOUN",
+              "xpos": "NNS",
+              "feats": "Number=Plur",
+              "head": 7,
+              "deprel": "ccomp",
+              "start_char": 157,
+              "end_char": 164
+            },
+            {
+              "id": 18,
+              "text": "and",
+              "lemma": "and",
+              "upos": "CCONJ",
+              "xpos": "CC",
+              "feats": null,
+              "head": 21,
+              "deprel": "cc",
+              "start_char": 165,
+              "end_char": 168
+            },
+            {
+              "id": 19,
+              "text": "Docker",
+              "lemma": "Docker",
+              "upos": "PROPN",
+              "xpos": "NNP",
+              "feats": "Number=Sing",
+              "head": 21,
+              "deprel": "nsubj",
+              "start_char": 169,
+              "end_char": 175
+            },
+            {
+              "id": 20,
+              "text": "has",
+              "lemma": "have",
+              "upos": "AUX",
+              "xpos": "VBZ",
+              "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+              "head": 21,
+              "deprel": "aux",
+              "start_char": 176,
+              "end_char": 179
+            },
+            {
+              "id": 21,
+              "text": "started",
+              "lemma": "start",
+              "upos": "VERB",
+              "xpos": "VBN",
+              "feats": "Tense=Past|VerbForm=Part",
+              "head": 7,
+              "deprel": "conj",
+              "start_char": 180,
+              "end_char": 187
+            },
+            {
+              "id": 22,
+              "text": "monitoring",
+              "lemma": "monitor",
+              "upos": "VERB",
+              "xpos": "VBG",
+              "feats": "VerbForm=Ger",
+              "head": 21,
+              "deprel": "xcomp",
+              "start_char": 188,
+              "end_char": 198
+            },
+            {
+              "id": 23,
+              "text": "it",
+              "lemma": "it",
+              "upos": "PRON",
+              "xpos": "PRP",
+              "feats": "Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs",
+              "head": 22,
+              "deprel": "obj",
+              "start_char": 199,
+              "end_char": 201
+            },
+            {
+              "id": 24,
+              "text": ".",
+              "lemma": ".",
+              "upos": "PUNCT",
+              "xpos": ".",
+              "feats": null,
+              "head": 7,
+              "deprel": "punct",
+              "start_char": 201,
+              "end_char": 202
+            }
+          ]
+        },
+        {
+          "sentence_id": 3,
+          "text": "This prevents a container which doesn't start at all from going into a restart loop.",
+          "tokens": [
+            {
+              "id": [
+                1
+              ],
+              "text": "This",
+              "start_char": 203,
+              "end_char": 207,
+              "word_ids": [
+                1
+              ]
+            },
+            {
+              "id": [
+                2
+              ],
+              "text": "prevents",
+              "start_char": 208,
+              "end_char": 216,
+              "word_ids": [
+                2
+              ]
+            },
+            {
+              "id": [
+                3
+              ],
+              "text": "a",
+              "start_char": 217,
+              "end_char": 218,
+              "word_ids": [
+                3
+              ]
+            },
+            {
+              "id": [
+                4
+              ],
+              "text": "container",
+              "start_char": 219,
+              "end_char": 228,
+              "word_ids": [
+                4
+              ]
+            },
+            {
+              "id": [
+                5
+              ],
+              "text": "which",
+              "start_char": 229,
+              "end_char": 234,
+              "word_ids": [
+                5
+              ]
+            },
+            {
+              "id": [
+                6,
+                7
+              ],
+              "text": "doesn't",
+              "start_char": 235,
+              "end_char": 242,
+              "word_ids": [
+                6,
+                7
+              ]
+            },
+            {
+              "id": [
+                8
+              ],
+              "text": "start",
+              "start_char": 243,
+              "end_char": 248,
+              "word_ids": [
+                8
+              ]
+            },
+            {
+              "id": [
+                9
+              ],
+              "text": "at",
+              "start_char": 249,
+              "end_char": 251,
+              "word_ids": [
+                9
+              ]
+            },
+            {
+              "id": [
+                10
+              ],
+              "text": "all",
+              "start_char": 252,
+              "end_char": 255,
+              "word_ids": [
+                10
+              ]
+            },
+            {
+              "id": [
+                11
+              ],
+              "text": "from",
+              "start_char": 256,
+              "end_char": 260,
+              "word_ids": [
+                11
+              ]
+            },
+            {
+              "id": [
+                12
+              ],
+              "text": "going",
+              "start_char": 261,
+              "end_char": 266,
+              "word_ids": [
+                12
+              ]
+            },
+            {
+              "id": [
+                13
+              ],
+              "text": "into",
+              "start_char": 267,
+              "end_char": 271,
+              "word_ids": [
+                13
+              ]
+            },
+            {
+              "id": [
+                14
+              ],
+              "text": "a",
+              "start_char": 272,
+              "end_char": 273,
+              "word_ids": [
+                14
+              ]
+            },
+            {
+              "id": [
+                15
+              ],
+              "text": "restart",
+              "start_char": 274,
+              "end_char": 281,
+              "word_ids": [
+                15
+              ]
+            },
+            {
+              "id": [
+                16
+              ],
+              "text": "loop",
+              "start_char": 282,
+              "end_char": 286,
+              "word_ids": [
+                16
+              ]
+            },
+            {
+              "id": [
+                17
+              ],
+              "text": ".",
+              "start_char": 286,
+              "end_char": 287,
+              "word_ids": [
+                17
+              ]
+            }
+          ],
+          "words": [
+            {
+              "id": 1,
+              "text": "This",
+              "lemma": "this",
+              "upos": "PRON",
+              "xpos": "DT",
+              "feats": "Number=Sing|PronType=Dem",
+              "head": 2,
+              "deprel": "nsubj",
+              "start_char": 203,
+              "end_char": 207
+            },
+            {
+              "id": 2,
+              "text": "prevents",
+              "lemma": "prevent",
+              "upos": "VERB",
+              "xpos": "VBZ",
+              "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+              "head": 0,
+              "deprel": "root",
+              "start_char": 208,
+              "end_char": 216
+            },
+            {
+              "id": 3,
+              "text": "a",
+              "lemma": "a",
+              "upos": "DET",
+              "xpos": "DT",
+              "feats": "Definite=Ind|PronType=Art",
+              "head": 4,
+              "deprel": "det",
+              "start_char": 217,
+              "end_char": 218
+            },
+            {
+              "id": 4,
+              "text": "container",
+              "lemma": "container",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 2,
+              "deprel": "obj",
+              "start_char": 219,
+              "end_char": 228
+            },
+            {
+              "id": 5,
+              "text": "which",
+              "lemma": "which",
+              "upos": "PRON",
+              "xpos": "WDT",
+              "feats": "PronType=Rel",
+              "head": 8,
+              "deprel": "nsubj",
+              "start_char": 229,
+              "end_char": 234
+            },
+            {
+              "id": 6,
+              "text": "does",
+              "lemma": "do",
+              "upos": "AUX",
+              "xpos": "VBZ",
+              "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+              "head": 8,
+              "deprel": "aux",
+              "start_char": 235,
+              "end_char": 239
+            },
+            {
+              "id": 7,
+              "text": "n't",
+              "lemma": "not",
+              "upos": "PART",
+              "xpos": "RB",
+              "feats": "Polarity=Neg",
+              "head": 8,
+              "deprel": "advmod",
+              "start_char": 239,
+              "end_char": 242
+            },
+            {
+              "id": 8,
+              "text": "start",
+              "lemma": "start",
+              "upos": "VERB",
+              "xpos": "VB",
+              "feats": "VerbForm=Inf",
+              "head": 4,
+              "deprel": "acl:relcl",
+              "start_char": 243,
+              "end_char": 248
+            },
+            {
+              "id": 9,
+              "text": "at",
+              "lemma": "at",
+              "upos": "ADP",
+              "xpos": "IN",
+              "feats": null,
+              "head": 10,
+              "deprel": "case",
+              "start_char": 249,
+              "end_char": 251
+            },
+            {
+              "id": 10,
+              "text": "all",
+              "lemma": "all",
+              "upos": "DET",
+              "xpos": "DT",
+              "feats": "PronType=Tot",
+              "head": 8,
+              "deprel": "obl",
+              "start_char": 252,
+              "end_char": 255
+            },
+            {
+              "id": 11,
+              "text": "from",
+              "lemma": "from",
+              "upos": "SCONJ",
+              "xpos": "IN",
+              "feats": null,
+              "head": 12,
+              "deprel": "mark",
+              "start_char": 256,
+              "end_char": 260
+            },
+            {
+              "id": 12,
+              "text": "going",
+              "lemma": "go",
+              "upos": "VERB",
+              "xpos": "VBG",
+              "feats": "Tense=Pres|VerbForm=Part",
+              "head": 8,
+              "deprel": "advcl",
+              "start_char": 261,
+              "end_char": 266
+            },
+            {
+              "id": 13,
+              "text": "into",
+              "lemma": "into",
+              "upos": "ADP",
+              "xpos": "IN",
+              "feats": null,
+              "head": 16,
+              "deprel": "case",
+              "start_char": 267,
+              "end_char": 271
+            },
+            {
+              "id": 14,
+              "text": "a",
+              "lemma": "a",
+              "upos": "DET",
+              "xpos": "DT",
+              "feats": "Definite=Ind|PronType=Art",
+              "head": 16,
+              "deprel": "det",
+              "start_char": 272,
+              "end_char": 273
+            },
+            {
+              "id": 15,
+              "text": "restart",
+              "lemma": "restart",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 16,
+              "deprel": "compound",
+              "start_char": 274,
+              "end_char": 281
+            },
+            {
+              "id": 16,
+              "text": "loop",
+              "lemma": "loop",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 12,
+              "deprel": "obl",
+              "start_char": 282,
+              "end_char": 286
+            },
+            {
+              "id": 17,
+              "text": ".",
+              "lemma": ".",
+              "upos": "PUNCT",
+              "xpos": ".",
+              "feats": null,
+              "head": 2,
+              "deprel": "punct",
+              "start_char": 286,
+              "end_char": 287
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "status": "local_snapshot_hash_verified",
+        "mapping": "paragraph level only; not a per-word original-file map"
+      },
+      "representation": {
+        "mode": "plain"
+      },
+      "target_span": [
+        0,
+        73
+      ],
+      "target_sentence_id": 1,
+      "code_mentions": [],
+      "code_boundary_issues": [],
+      "scope_ablation_eligible": true
+    },
+    {
+      "id": "git-add-default-001",
+      "kind": "real_document_development_diagnostic",
+      "input": {
+        "id": "git-add-default-001",
+        "kind": "real_document_development_diagnostic",
+        "document_group": "git-add-manual",
+        "text": "The git add command will not add ignored files by default. You can use the --force option to add ignored files. If you specify the exact filename of an ignored file, git add will fail with a list of ignored files. Otherwise it will silently ignore the file.",
+        "target_span": [
+          0,
+          58
+        ],
+        "context_policy": "Entire selected prose paragraph/list item is parser input; only target_span is evaluated. The source section identifies option/example context, not an inferred universal behavior.",
+        "source": {
+          "file": "sources/git-add-v2.56.0/git-add.adoc",
+          "file_sha256": "42089b80b378a7e9711dde024b7ec94a6863378164ea434a34c6af07632e65db",
+          "url": "https://git-scm.com/docs/git-add",
+          "revision": "a018953688f1b10bddf91bff8747068f5f4746a4",
+          "format": "AsciiDoc",
+          "license_snapshot": "sources/git-add-v2.56.0/COPYING",
+          "section": "DESCRIPTION",
+          "raw_lines_inclusive": [
+            40,
+            43
+          ],
+          "raw_paragraph_span": [
+            1361,
+            1624
+          ],
+          "raw_paragraph_sha256": "58c30ae8e5f7a177fa79bc7d0995a40989ae225e61370a007c213970c1ea5395"
+        },
+        "preparation": {
+          "method": "Select full prose paragraph/list item (omit option term labels); remove initial bullet marker and backticks, render inline Markdown links as their labels, collapse whitespace. Preserve original words; no paraphrasing.",
+          "character_unit": "Unicode code points",
+          "interval": "zero-based half-open",
+          "source_mapping": "paragraph-level raw span only; no per-token original-file mapping",
+          "text_sha256": "f02d70612a5809afbfe53da2c7a3e6bd627fe22ee4d8d8cdc22d75c8de714dbc",
+          "script_sha256": "048b49e3d24e0224d2b72af04261da5d90142237b7d12b6062bd847f8fc7a147"
+        },
+        "annotation_status": "assistant-authored expectations stored separately; not independently annotated gold",
+        "split_policy": "development_only; exclude the entire document_group from later held-out evaluation",
+        "recorded_on": "2026-11-06",
+        "source_code": {
+          "version": "libri-inline-code-0.1",
+          "raw_paragraph": "The `git add` command will not add ignored files by default. You can\nuse the `--force` option to add ignored files. If you specify the exact\nfilename of an ignored file, `git add` will fail with a list of ignored\nfiles. Otherwise it will silently ignore the file.",
+          "raw_sha256": "58c30ae8e5f7a177fa79bc7d0995a40989ae225e61370a007c213970c1ea5395",
+          "text_sha256": "f02d70612a5809afbfe53da2c7a3e6bd627fe22ee4d8d8cdc22d75c8de714dbc",
+          "plain_to_raw": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167,
+            168,
+            169,
+            171,
+            172,
+            173,
+            174,
+            175,
+            176,
+            177,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259,
+            260,
+            261,
+            262
+          ],
+          "spans": [
+            {
+              "id": "c1",
+              "text": "git add",
+              "span": [
+                4,
+                11
+              ],
+              "raw_content_span": [
+                5,
+                12
+              ]
+            },
+            {
+              "id": "c2",
+              "text": "--force",
+              "span": [
+                75,
+                82
+              ],
+              "raw_content_span": [
+                78,
+                85
+              ]
+            },
+            {
+              "id": "c3",
+              "text": "git add",
+              "span": [
+                166,
+                173
+              ],
+              "raw_content_span": [
+                171,
+                178
+              ]
+            }
+          ],
+          "meaning": "source_inline_code_not_semantic_command_label"
+        }
+      },
+      "runtime_status": "ok",
+      "candidate": {
+        "status": "pattern_covered",
+        "reasons": [],
+        "frames": [
+          {
+            "id": "f1",
+            "kind": "event",
+            "head_word_id": 7,
+            "voice": "active",
+            "clause_form": "unspecified",
+            "subject_status": "explicit",
+            "predicate": {
+              "text": "add",
+              "spans": [
+                [
+                  29,
+                  32
+                ]
+              ],
+              "word_ids": [
+                7
+              ],
+              "lemma": "add"
+            },
+            "roles": [
+              {
+                "role": "subject",
+                "phrase": {
+                  "text": "git add command",
+                  "spans": [
+                    [
+                      4,
+                      19
+                    ]
+                  ],
+                  "word_ids": [
+                    2,
+                    3,
+                    4
+                  ]
+                },
+                "head_word_id": 4,
+                "syntactic_relation": "nsubj",
+                "mention_type": "nominal",
+                "reference_status": "source_mention_only"
+              },
+              {
+                "role": "object",
+                "phrase": {
+                  "text": "ignored files",
+                  "spans": [
+                    [
+                      33,
+                      46
+                    ]
+                  ],
+                  "word_ids": [
+                    8,
+                    9
+                  ]
+                },
+                "head_word_id": 9,
+                "syntactic_relation": "obj",
+                "mention_type": "nominal",
+                "reference_status": "source_mention_only"
+              }
+            ],
+            "qualifier_ids": [
+              "q1",
+              "q2",
+              "q3"
+            ],
+            "is_independent_assertion": false
+          }
+        ],
+        "qualifiers": [
+          {
+            "id": "q1",
+            "kind": "modal",
+            "cue": {
+              "text": "will",
+              "spans": [
+                [
+                  20,
+                  24
+                ]
+              ],
+              "word_ids": [
+                5
+              ]
+            },
+            "target": "f1",
+            "interpretation_status": "supported",
+            "modal_force": "prediction",
+            "modal_flavor": "not_determined",
+            "negation_scope": "modal_over_negation"
+          },
+          {
+            "id": "q2",
+            "kind": "negation",
+            "cue": {
+              "text": "not",
+              "spans": [
+                [
+                  25,
+                  28
+                ]
+              ],
+              "word_ids": [
+                6
+              ]
+            },
+            "target": "f1",
+            "interpretation_status": "supported"
+          },
+          {
+            "id": "q3",
+            "kind": "default",
+            "cue": {
+              "text": "by default",
+              "spans": [
+                [
+                  47,
+                  57
+                ]
+              ],
+              "word_ids": [
+                10,
+                11
+              ]
+            },
+            "target": "f1",
+            "interpretation_status": "supported",
+            "scope_candidate": {
+              "kind": "default",
+              "child": {
+                "kind": "modal",
+                "force": "prediction",
+                "child": {
+                  "kind": "negation",
+                  "child": {
+                    "kind": "frame",
+                    "frame": "f1"
+                  }
+                }
+              }
+            },
+            "scope_candidate_is_complete_claim": false,
+            "scope_candidate_scope": "local_frame_negation_and_modal",
+            "scope_candidate_excluded_qualifier_ids": []
+          }
+        ],
+        "pp_candidates": [],
+        "candidate_structure": {
+          "kind": "default",
+          "child": {
+            "kind": "modal",
+            "force": "prediction",
+            "child": {
+              "kind": "negation",
+              "child": {
+                "kind": "frame",
+                "frame": "f1"
+              }
+            }
+          }
+        },
+        "evidence": {
+          "text": "The git add command will not add ignored files by default.",
+          "spans": [
+            [
+              0,
+              58
+            ]
+          ],
+          "word_ids": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        "assertion_policy": "source_required"
+      },
+      "variants": {
+        "literal_svo": {
+          "variant": "literal_svo_heads",
+          "triples": [
+            {
+              "subject": {
+                "text": "command",
+                "lemma": "command",
+                "spans": [
+                  [
+                    12,
+                    19
+                  ]
+                ],
+                "word_ids": [
+                  4
+                ]
+              },
+              "verb": {
+                "text": "add",
+                "lemma": "add",
+                "spans": [
+                  [
+                    29,
+                    32
+                  ]
+                ],
+                "word_ids": [
+                  7
+                ]
+              },
+              "object": {
+                "text": "files",
+                "lemma": "file",
+                "spans": [
+                  [
+                    41,
+                    46
+                  ]
+                ],
+                "word_ids": [
+                  9
+                ]
+              }
+            }
+          ],
+          "note": "Drops modifiers and scope by design; evaluation only, not a safe user-facing claim."
+        },
+        "frames_without_scope": {
+          "variant": "frames_without_scope",
+          "frames": [
+            {
+              "id": "f1",
+              "kind": "event",
+              "head_word_id": 7,
+              "voice": "active",
+              "clause_form": "unspecified",
+              "subject_status": "explicit",
+              "predicate": {
+                "text": "add",
+                "spans": [
+                  [
+                    29,
+                    32
+                  ]
+                ],
+                "word_ids": [
+                  7
+                ],
+                "lemma": "add"
+              },
+              "roles": [
+                {
+                  "role": "subject",
+                  "phrase": {
+                    "text": "git add command",
+                    "spans": [
+                      [
+                        4,
+                        19
+                      ]
+                    ],
+                    "word_ids": [
+                      2,
+                      3,
+                      4
+                    ]
+                  },
+                  "head_word_id": 4,
+                  "syntactic_relation": "nsubj",
+                  "mention_type": "nominal",
+                  "reference_status": "source_mention_only"
+                },
+                {
+                  "role": "object",
+                  "phrase": {
+                    "text": "ignored files",
+                    "spans": [
+                      [
+                        33,
+                        46
+                      ]
+                    ],
+                    "word_ids": [
+                      8,
+                      9
+                    ]
+                  },
+                  "head_word_id": 9,
+                  "syntactic_relation": "obj",
+                  "mention_type": "nominal",
+                  "reference_status": "source_mention_only"
+                }
+              ],
+              "is_independent_assertion": false
+            }
+          ],
+          "ablation_definition": "all_qualifiers_removed_including_manner_time_result_configuration_method_destination_purpose",
+          "qualifiers": [],
+          "candidate_structure": null,
+          "parent_status": "pattern_covered",
+          "scope_ablation_eligible": true,
+          "note": "Same frame inventory and eligibility as full variant; all qualifiers removed, including time/result/configuration/method/destination and nested purpose as well as scope. Legacy key kept for compatibility. Score this payload, not raw evidence. Eligibility is NOT a dataset filter; all inputs remain in denominators. Partial fragments are diagnostic only."
+        },
+        "scope_operators_removed": {
+          "variant": "scope_operators_removed",
+          "removed_kinds": [
+            "default",
+            "if",
+            "modal",
+            "negation",
+            "only_after",
+            "purpose",
+            "unresolved_condition"
+          ],
+          "frames": [
+            {
+              "id": "f1",
+              "kind": "event",
+              "head_word_id": 7,
+              "voice": "active",
+              "clause_form": "unspecified",
+              "subject_status": "explicit",
+              "predicate": {
+                "text": "add",
+                "spans": [
+                  [
+                    29,
+                    32
+                  ]
+                ],
+                "word_ids": [
+                  7
+                ],
+                "lemma": "add"
+              },
+              "roles": [
+                {
+                  "role": "subject",
+                  "phrase": {
+                    "text": "git add command",
+                    "spans": [
+                      [
+                        4,
+                        19
+                      ]
+                    ],
+                    "word_ids": [
+                      2,
+                      3,
+                      4
+                    ]
+                  },
+                  "head_word_id": 4,
+                  "syntactic_relation": "nsubj",
+                  "mention_type": "nominal",
+                  "reference_status": "source_mention_only"
+                },
+                {
+                  "role": "object",
+                  "phrase": {
+                    "text": "ignored files",
+                    "spans": [
+                      [
+                        33,
+                        46
+                      ]
+                    ],
+                    "word_ids": [
+                      8,
+                      9
+                    ]
+                  },
+                  "head_word_id": 9,
+                  "syntactic_relation": "obj",
+                  "mention_type": "nominal",
+                  "reference_status": "source_mention_only"
+                }
+              ],
+              "qualifier_ids": [],
+              "is_independent_assertion": false
+            }
+          ],
+          "qualifiers": [],
+          "candidate_structure": null,
+          "parent_status": "pattern_covered",
+          "scope_ablation_eligible": true,
+          "note": "Evaluation-only ablation: removes selected negation/modal/condition/default operators, including unresolved_condition and nested purpose; retains manner/time/result/configuration/method/destination content. Unmodeled cue text, purpose text and condition frames can remain: this is node removal, not erasure of all scope information. Same input/frame denominator. No independent assertions or safe user-facing claims."
+        }
+      },
+      "syntax": [
+        {
+          "sentence_id": 1,
+          "text": "The git add command will not add ignored files by default.",
+          "tokens": [
+            {
+              "id": [
+                1
+              ],
+              "text": "The",
+              "start_char": 0,
+              "end_char": 3,
+              "word_ids": [
+                1
+              ]
+            },
+            {
+              "id": [
+                2
+              ],
+              "text": "git",
+              "start_char": 4,
+              "end_char": 7,
+              "word_ids": [
+                2
+              ]
+            },
+            {
+              "id": [
+                3
+              ],
+              "text": "add",
+              "start_char": 8,
+              "end_char": 11,
+              "word_ids": [
+                3
+              ]
+            },
+            {
+              "id": [
+                4
+              ],
+              "text": "command",
+              "start_char": 12,
+              "end_char": 19,
+              "word_ids": [
+                4
+              ]
+            },
+            {
+              "id": [
+                5
+              ],
+              "text": "will",
+              "start_char": 20,
+              "end_char": 24,
+              "word_ids": [
+                5
+              ]
+            },
+            {
+              "id": [
+                6
+              ],
+              "text": "not",
+              "start_char": 25,
+              "end_char": 28,
+              "word_ids": [
+                6
+              ]
+            },
+            {
+              "id": [
+                7
+              ],
+              "text": "add",
+              "start_char": 29,
+              "end_char": 32,
+              "word_ids": [
+                7
+              ]
+            },
+            {
+              "id": [
+                8
+              ],
+              "text": "ignored",
+              "start_char": 33,
+              "end_char": 40,
+              "word_ids": [
+                8
+              ]
+            },
+            {
+              "id": [
+                9
+              ],
+              "text": "files",
+              "start_char": 41,
+              "end_char": 46,
+              "word_ids": [
+                9
+              ]
+            },
+            {
+              "id": [
+                10
+              ],
+              "text": "by",
+              "start_char": 47,
+              "end_char": 49,
+              "word_ids": [
+                10
+              ]
+            },
+            {
+              "id": [
+                11
+              ],
+              "text": "default",
+              "start_char": 50,
+              "end_char": 57,
+              "word_ids": [
+                11
+              ]
+            },
+            {
+              "id": [
+                12
+              ],
+              "text": ".",
+              "start_char": 57,
+              "end_char": 58,
+              "word_ids": [
+                12
+              ]
+            }
+          ],
+          "words": [
+            {
+              "id": 1,
+              "text": "The",
+              "lemma": "the",
+              "upos": "DET",
+              "xpos": "DT",
+              "feats": "Definite=Def|PronType=Art",
+              "head": 4,
+              "deprel": "det",
+              "start_char": 0,
+              "end_char": 3
+            },
+            {
+              "id": 2,
+              "text": "git",
+              "lemma": "git",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 3,
+              "deprel": "compound",
+              "start_char": 4,
+              "end_char": 7
+            },
+            {
+              "id": 3,
+              "text": "add",
+              "lemma": "add",
+              "upos": "VERB",
+              "xpos": "VB",
+              "feats": "VerbForm=Inf",
+              "head": 4,
+              "deprel": "compound",
+              "start_char": 8,
+              "end_char": 11
+            },
+            {
+              "id": 4,
+              "text": "command",
+              "lemma": "command",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 7,
+              "deprel": "nsubj",
+              "start_char": 12,
+              "end_char": 19
+            },
+            {
+              "id": 5,
+              "text": "will",
+              "lemma": "will",
+              "upos": "AUX",
+              "xpos": "MD",
+              "feats": "VerbForm=Fin",
+              "head": 7,
+              "deprel": "aux",
+              "start_char": 20,
+              "end_char": 24
+            },
+            {
+              "id": 6,
+              "text": "not",
+              "lemma": "not",
+              "upos": "PART",
+              "xpos": "RB",
+              "feats": "Polarity=Neg",
+              "head": 7,
+              "deprel": "advmod",
+              "start_char": 25,
+              "end_char": 28
+            },
+            {
+              "id": 7,
+              "text": "add",
+              "lemma": "add",
+              "upos": "VERB",
+              "xpos": "VB",
+              "feats": "VerbForm=Inf",
+              "head": 0,
+              "deprel": "root",
+              "start_char": 29,
+              "end_char": 32
+            },
+            {
+              "id": 8,
+              "text": "ignored",
+              "lemma": "ignore",
+              "upos": "VERB",
+              "xpos": "VBN",
+              "feats": "Tense=Past|VerbForm=Part|Voice=Pass",
+              "head": 9,
+              "deprel": "amod",
+              "start_char": 33,
+              "end_char": 40
+            },
+            {
+              "id": 9,
+              "text": "files",
+              "lemma": "file",
+              "upos": "NOUN",
+              "xpos": "NNS",
+              "feats": "Number=Plur",
+              "head": 7,
+              "deprel": "obj",
+              "start_char": 41,
+              "end_char": 46
+            },
+            {
+              "id": 10,
+              "text": "by",
+              "lemma": "by",
+              "upos": "ADP",
+              "xpos": "IN",
+              "feats": null,
+              "head": 11,
+              "deprel": "case",
+              "start_char": 47,
+              "end_char": 49
+            },
+            {
+              "id": 11,
+              "text": "default",
+              "lemma": "default",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 7,
+              "deprel": "obl",
+              "start_char": 50,
+              "end_char": 57
+            },
+            {
+              "id": 12,
+              "text": ".",
+              "lemma": ".",
+              "upos": "PUNCT",
+              "xpos": ".",
+              "feats": null,
+              "head": 7,
+              "deprel": "punct",
+              "start_char": 57,
+              "end_char": 58
+            }
+          ]
+        },
+        {
+          "sentence_id": 2,
+          "text": "You can use the --force option to add ignored files.",
+          "tokens": [
+            {
+              "id": [
+                1
+              ],
+              "text": "You",
+              "start_char": 59,
+              "end_char": 62,
+              "word_ids": [
+                1
+              ]
+            },
+            {
+              "id": [
+                2
+              ],
+              "text": "can",
+              "start_char": 63,
+              "end_char": 66,
+              "word_ids": [
+                2
+              ]
+            },
+            {
+              "id": [
+                3
+              ],
+              "text": "use",
+              "start_char": 67,
+              "end_char": 70,
+              "word_ids": [
+                3
+              ]
+            },
+            {
+              "id": [
+                4
+              ],
+              "text": "the",
+              "start_char": 71,
+              "end_char": 74,
+              "word_ids": [
+                4
+              ]
+            },
+            {
+              "id": [
+                5
+              ],
+              "text": "--",
+              "start_char": 75,
+              "end_char": 77,
+              "word_ids": [
+                5
+              ]
+            },
+            {
+              "id": [
+                6
+              ],
+              "text": "force",
+              "start_char": 77,
+              "end_char": 82,
+              "word_ids": [
+                6
+              ]
+            },
+            {
+              "id": [
+                7
+              ],
+              "text": "option",
+              "start_char": 83,
+              "end_char": 89,
+              "word_ids": [
+                7
+              ]
+            },
+            {
+              "id": [
+                8
+              ],
+              "text": "to",
+              "start_char": 90,
+              "end_char": 92,
+              "word_ids": [
+                8
+              ]
+            },
+            {
+              "id": [
+                9
+              ],
+              "text": "add",
+              "start_char": 93,
+              "end_char": 96,
+              "word_ids": [
+                9
+              ]
+            },
+            {
+              "id": [
+                10
+              ],
+              "text": "ignored",
+              "start_char": 97,
+              "end_char": 104,
+              "word_ids": [
+                10
+              ]
+            },
+            {
+              "id": [
+                11
+              ],
+              "text": "files",
+              "start_char": 105,
+              "end_char": 110,
+              "word_ids": [
+                11
+              ]
+            },
+            {
+              "id": [
+                12
+              ],
+              "text": ".",
+              "start_char": 110,
+              "end_char": 111,
+              "word_ids": [
+                12
+              ]
+            }
+          ],
+          "words": [
+            {
+              "id": 1,
+              "text": "You",
+              "lemma": "you",
+              "upos": "PRON",
+              "xpos": "PRP",
+              "feats": "Case=Nom|Person=2|PronType=Prs",
+              "head": 3,
+              "deprel": "nsubj",
+              "start_char": 59,
+              "end_char": 62
+            },
+            {
+              "id": 2,
+              "text": "can",
+              "lemma": "can",
+              "upos": "AUX",
+              "xpos": "MD",
+              "feats": "VerbForm=Fin",
+              "head": 3,
+              "deprel": "aux",
+              "start_char": 63,
+              "end_char": 66
+            },
+            {
+              "id": 3,
+              "text": "use",
+              "lemma": "use",
+              "upos": "VERB",
+              "xpos": "VB",
+              "feats": "VerbForm=Inf",
+              "head": 0,
+              "deprel": "root",
+              "start_char": 67,
+              "end_char": 70
+            },
+            {
+              "id": 4,
+              "text": "the",
+              "lemma": "the",
+              "upos": "DET",
+              "xpos": "DT",
+              "feats": "Definite=Def|PronType=Art",
+              "head": 7,
+              "deprel": "det",
+              "start_char": 71,
+              "end_char": 74
+            },
+            {
+              "id": 5,
+              "text": "--",
+              "lemma": "--",
+              "upos": "PUNCT",
+              "xpos": ",",
+              "feats": null,
+              "head": 7,
+              "deprel": "punct",
+              "start_char": 75,
+              "end_char": 77
+            },
+            {
+              "id": 6,
+              "text": "force",
+              "lemma": "force",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 7,
+              "deprel": "compound",
+              "start_char": 77,
+              "end_char": 82
+            },
+            {
+              "id": 7,
+              "text": "option",
+              "lemma": "option",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 3,
+              "deprel": "obj",
+              "start_char": 83,
+              "end_char": 89
+            },
+            {
+              "id": 8,
+              "text": "to",
+              "lemma": "to",
+              "upos": "PART",
+              "xpos": "TO",
+              "feats": null,
+              "head": 9,
+              "deprel": "mark",
+              "start_char": 90,
+              "end_char": 92
+            },
+            {
+              "id": 9,
+              "text": "add",
+              "lemma": "add",
+              "upos": "VERB",
+              "xpos": "VB",
+              "feats": "VerbForm=Inf",
+              "head": 7,
+              "deprel": "acl",
+              "start_char": 93,
+              "end_char": 96
+            },
+            {
+              "id": 10,
+              "text": "ignored",
+              "lemma": "ignore",
+              "upos": "VERB",
+              "xpos": "VBN",
+              "feats": "Tense=Past|VerbForm=Part|Voice=Pass",
+              "head": 11,
+              "deprel": "amod",
+              "start_char": 97,
+              "end_char": 104
+            },
+            {
+              "id": 11,
+              "text": "files",
+              "lemma": "file",
+              "upos": "NOUN",
+              "xpos": "NNS",
+              "feats": "Number=Plur",
+              "head": 9,
+              "deprel": "obj",
+              "start_char": 105,
+              "end_char": 110
+            },
+            {
+              "id": 12,
+              "text": ".",
+              "lemma": ".",
+              "upos": "PUNCT",
+              "xpos": ".",
+              "feats": null,
+              "head": 3,
+              "deprel": "punct",
+              "start_char": 110,
+              "end_char": 111
+            }
+          ]
+        },
+        {
+          "sentence_id": 3,
+          "text": "If you specify the exact filename of an ignored file, git add will fail with a list of ignored files.",
+          "tokens": [
+            {
+              "id": [
+                1
+              ],
+              "text": "If",
+              "start_char": 112,
+              "end_char": 114,
+              "word_ids": [
+                1
+              ]
+            },
+            {
+              "id": [
+                2
+              ],
+              "text": "you",
+              "start_char": 115,
+              "end_char": 118,
+              "word_ids": [
+                2
+              ]
+            },
+            {
+              "id": [
+                3
+              ],
+              "text": "specify",
+              "start_char": 119,
+              "end_char": 126,
+              "word_ids": [
+                3
+              ]
+            },
+            {
+              "id": [
+                4
+              ],
+              "text": "the",
+              "start_char": 127,
+              "end_char": 130,
+              "word_ids": [
+                4
+              ]
+            },
+            {
+              "id": [
+                5
+              ],
+              "text": "exact",
+              "start_char": 131,
+              "end_char": 136,
+              "word_ids": [
+                5
+              ]
+            },
+            {
+              "id": [
+                6
+              ],
+              "text": "filename",
+              "start_char": 137,
+              "end_char": 145,
+              "word_ids": [
+                6
+              ]
+            },
+            {
+              "id": [
+                7
+              ],
+              "text": "of",
+              "start_char": 146,
+              "end_char": 148,
+              "word_ids": [
+                7
+              ]
+            },
+            {
+              "id": [
+                8
+              ],
+              "text": "an",
+              "start_char": 149,
+              "end_char": 151,
+              "word_ids": [
+                8
+              ]
+            },
+            {
+              "id": [
+                9
+              ],
+              "text": "ignored",
+              "start_char": 152,
+              "end_char": 159,
+              "word_ids": [
+                9
+              ]
+            },
+            {
+              "id": [
+                10
+              ],
+              "text": "file",
+              "start_char": 160,
+              "end_char": 164,
+              "word_ids": [
+                10
+              ]
+            },
+            {
+              "id": [
+                11
+              ],
+              "text": ",",
+              "start_char": 164,
+              "end_char": 165,
+              "word_ids": [
+                11
+              ]
+            },
+            {
+              "id": [
+                12
+              ],
+              "text": "git",
+              "start_char": 166,
+              "end_char": 169,
+              "word_ids": [
+                12
+              ]
+            },
+            {
+              "id": [
+                13
+              ],
+              "text": "add",
+              "start_char": 170,
+              "end_char": 173,
+              "word_ids": [
+                13
+              ]
+            },
+            {
+              "id": [
+                14
+              ],
+              "text": "will",
+              "start_char": 174,
+              "end_char": 178,
+              "word_ids": [
+                14
+              ]
+            },
+            {
+              "id": [
+                15
+              ],
+              "text": "fail",
+              "start_char": 179,
+              "end_char": 183,
+              "word_ids": [
+                15
+              ]
+            },
+            {
+              "id": [
+                16
+              ],
+              "text": "with",
+              "start_char": 184,
+              "end_char": 188,
+              "word_ids": [
+                16
+              ]
+            },
+            {
+              "id": [
+                17
+              ],
+              "text": "a",
+              "start_char": 189,
+              "end_char": 190,
+              "word_ids": [
+                17
+              ]
+            },
+            {
+              "id": [
+                18
+              ],
+              "text": "list",
+              "start_char": 191,
+              "end_char": 195,
+              "word_ids": [
+                18
+              ]
+            },
+            {
+              "id": [
+                19
+              ],
+              "text": "of",
+              "start_char": 196,
+              "end_char": 198,
+              "word_ids": [
+                19
+              ]
+            },
+            {
+              "id": [
+                20
+              ],
+              "text": "ignored",
+              "start_char": 199,
+              "end_char": 206,
+              "word_ids": [
+                20
+              ]
+            },
+            {
+              "id": [
+                21
+              ],
+              "text": "files",
+              "start_char": 207,
+              "end_char": 212,
+              "word_ids": [
+                21
+              ]
+            },
+            {
+              "id": [
+                22
+              ],
+              "text": ".",
+              "start_char": 212,
+              "end_char": 213,
+              "word_ids": [
+                22
+              ]
+            }
+          ],
+          "words": [
+            {
+              "id": 1,
+              "text": "If",
+              "lemma": "if",
+              "upos": "SCONJ",
+              "xpos": "IN",
+              "feats": null,
+              "head": 3,
+              "deprel": "mark",
+              "start_char": 112,
+              "end_char": 114
+            },
+            {
+              "id": 2,
+              "text": "you",
+              "lemma": "you",
+              "upos": "PRON",
+              "xpos": "PRP",
+              "feats": "Case=Nom|Person=2|PronType=Prs",
+              "head": 3,
+              "deprel": "nsubj",
+              "start_char": 115,
+              "end_char": 118
+            },
+            {
+              "id": 3,
+              "text": "specify",
+              "lemma": "specify",
+              "upos": "VERB",
+              "xpos": "VBP",
+              "feats": "Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin",
+              "head": 15,
+              "deprel": "advcl",
+              "start_char": 119,
+              "end_char": 126
+            },
+            {
+              "id": 4,
+              "text": "the",
+              "lemma": "the",
+              "upos": "DET",
+              "xpos": "DT",
+              "feats": "Definite=Def|PronType=Art",
+              "head": 6,
+              "deprel": "det",
+              "start_char": 127,
+              "end_char": 130
+            },
+            {
+              "id": 5,
+              "text": "exact",
+              "lemma": "exact",
+              "upos": "ADJ",
+              "xpos": "JJ",
+              "feats": "Degree=Pos",
+              "head": 6,
+              "deprel": "amod",
+              "start_char": 131,
+              "end_char": 136
+            },
+            {
+              "id": 6,
+              "text": "filename",
+              "lemma": "filename",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 3,
+              "deprel": "obj",
+              "start_char": 137,
+              "end_char": 145
+            },
+            {
+              "id": 7,
+              "text": "of",
+              "lemma": "of",
+              "upos": "ADP",
+              "xpos": "IN",
+              "feats": null,
+              "head": 10,
+              "deprel": "case",
+              "start_char": 146,
+              "end_char": 148
+            },
+            {
+              "id": 8,
+              "text": "an",
+              "lemma": "a",
+              "upos": "DET",
+              "xpos": "DT",
+              "feats": "Definite=Ind|PronType=Art",
+              "head": 10,
+              "deprel": "det",
+              "start_char": 149,
+              "end_char": 151
+            },
+            {
+              "id": 9,
+              "text": "ignored",
+              "lemma": "ignore",
+              "upos": "VERB",
+              "xpos": "VBN",
+              "feats": "Tense=Past|VerbForm=Part|Voice=Pass",
+              "head": 10,
+              "deprel": "amod",
+              "start_char": 152,
+              "end_char": 159
+            },
+            {
+              "id": 10,
+              "text": "file",
+              "lemma": "file",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 6,
+              "deprel": "nmod",
+              "start_char": 160,
+              "end_char": 164
+            },
+            {
+              "id": 11,
+              "text": ",",
+              "lemma": ",",
+              "upos": "PUNCT",
+              "xpos": ",",
+              "feats": null,
+              "head": 3,
+              "deprel": "punct",
+              "start_char": 164,
+              "end_char": 165
+            },
+            {
+              "id": 12,
+              "text": "git",
+              "lemma": "git",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 13,
+              "deprel": "nsubj",
+              "start_char": 166,
+              "end_char": 169
+            },
+            {
+              "id": 13,
+              "text": "add",
+              "lemma": "add",
+              "upos": "VERB",
+              "xpos": "VB",
+              "feats": "Mood=Imp|VerbForm=Fin",
+              "head": 15,
+              "deprel": "parataxis",
+              "start_char": 170,
+              "end_char": 173
+            },
+            {
+              "id": 14,
+              "text": "will",
+              "lemma": "will",
+              "upos": "AUX",
+              "xpos": "MD",
+              "feats": "VerbForm=Fin",
+              "head": 15,
+              "deprel": "aux",
+              "start_char": 174,
+              "end_char": 178
+            },
+            {
+              "id": 15,
+              "text": "fail",
+              "lemma": "fail",
+              "upos": "VERB",
+              "xpos": "VB",
+              "feats": "VerbForm=Inf",
+              "head": 0,
+              "deprel": "root",
+              "start_char": 179,
+              "end_char": 183
+            },
+            {
+              "id": 16,
+              "text": "with",
+              "lemma": "with",
+              "upos": "ADP",
+              "xpos": "IN",
+              "feats": null,
+              "head": 18,
+              "deprel": "case",
+              "start_char": 184,
+              "end_char": 188
+            },
+            {
+              "id": 17,
+              "text": "a",
+              "lemma": "a",
+              "upos": "DET",
+              "xpos": "DT",
+              "feats": "Definite=Ind|PronType=Art",
+              "head": 18,
+              "deprel": "det",
+              "start_char": 189,
+              "end_char": 190
+            },
+            {
+              "id": 18,
+              "text": "list",
+              "lemma": "list",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 15,
+              "deprel": "obl",
+              "start_char": 191,
+              "end_char": 195
+            },
+            {
+              "id": 19,
+              "text": "of",
+              "lemma": "of",
+              "upos": "ADP",
+              "xpos": "IN",
+              "feats": null,
+              "head": 21,
+              "deprel": "case",
+              "start_char": 196,
+              "end_char": 198
+            },
+            {
+              "id": 20,
+              "text": "ignored",
+              "lemma": "ignore",
+              "upos": "VERB",
+              "xpos": "VBN",
+              "feats": "Tense=Past|VerbForm=Part|Voice=Pass",
+              "head": 21,
+              "deprel": "amod",
+              "start_char": 199,
+              "end_char": 206
+            },
+            {
+              "id": 21,
+              "text": "files",
+              "lemma": "file",
+              "upos": "NOUN",
+              "xpos": "NNS",
+              "feats": "Number=Plur",
+              "head": 18,
+              "deprel": "nmod",
+              "start_char": 207,
+              "end_char": 212
+            },
+            {
+              "id": 22,
+              "text": ".",
+              "lemma": ".",
+              "upos": "PUNCT",
+              "xpos": ".",
+              "feats": null,
+              "head": 15,
+              "deprel": "punct",
+              "start_char": 212,
+              "end_char": 213
+            }
+          ]
+        },
+        {
+          "sentence_id": 4,
+          "text": "Otherwise it will silently ignore the file.",
+          "tokens": [
+            {
+              "id": [
+                1
+              ],
+              "text": "Otherwise",
+              "start_char": 214,
+              "end_char": 223,
+              "word_ids": [
+                1
+              ]
+            },
+            {
+              "id": [
+                2
+              ],
+              "text": "it",
+              "start_char": 224,
+              "end_char": 226,
+              "word_ids": [
+                2
+              ]
+            },
+            {
+              "id": [
+                3
+              ],
+              "text": "will",
+              "start_char": 227,
+              "end_char": 231,
+              "word_ids": [
+                3
+              ]
+            },
+            {
+              "id": [
+                4
+              ],
+              "text": "silently",
+              "start_char": 232,
+              "end_char": 240,
+              "word_ids": [
+                4
+              ]
+            },
+            {
+              "id": [
+                5
+              ],
+              "text": "ignore",
+              "start_char": 241,
+              "end_char": 247,
+              "word_ids": [
+                5
+              ]
+            },
+            {
+              "id": [
+                6
+              ],
+              "text": "the",
+              "start_char": 248,
+              "end_char": 251,
+              "word_ids": [
+                6
+              ]
+            },
+            {
+              "id": [
+                7
+              ],
+              "text": "file",
+              "start_char": 252,
+              "end_char": 256,
+              "word_ids": [
+                7
+              ]
+            },
+            {
+              "id": [
+                8
+              ],
+              "text": ".",
+              "start_char": 256,
+              "end_char": 257,
+              "word_ids": [
+                8
+              ]
+            }
+          ],
+          "words": [
+            {
+              "id": 1,
+              "text": "Otherwise",
+              "lemma": "otherwise",
+              "upos": "ADV",
+              "xpos": "RB",
+              "feats": null,
+              "head": 5,
+              "deprel": "advmod",
+              "start_char": 214,
+              "end_char": 223
+            },
+            {
+              "id": 2,
+              "text": "it",
+              "lemma": "it",
+              "upos": "PRON",
+              "xpos": "PRP",
+              "feats": "Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs",
+              "head": 5,
+              "deprel": "nsubj",
+              "start_char": 224,
+              "end_char": 226
+            },
+            {
+              "id": 3,
+              "text": "will",
+              "lemma": "will",
+              "upos": "AUX",
+              "xpos": "MD",
+              "feats": "VerbForm=Fin",
+              "head": 5,
+              "deprel": "aux",
+              "start_char": 227,
+              "end_char": 231
+            },
+            {
+              "id": 4,
+              "text": "silently",
+              "lemma": "silently",
+              "upos": "ADV",
+              "xpos": "RB",
+              "feats": null,
+              "head": 5,
+              "deprel": "advmod",
+              "start_char": 232,
+              "end_char": 240
+            },
+            {
+              "id": 5,
+              "text": "ignore",
+              "lemma": "ignore",
+              "upos": "VERB",
+              "xpos": "VB",
+              "feats": "VerbForm=Inf",
+              "head": 0,
+              "deprel": "root",
+              "start_char": 241,
+              "end_char": 247
+            },
+            {
+              "id": 6,
+              "text": "the",
+              "lemma": "the",
+              "upos": "DET",
+              "xpos": "DT",
+              "feats": "Definite=Def|PronType=Art",
+              "head": 7,
+              "deprel": "det",
+              "start_char": 248,
+              "end_char": 251
+            },
+            {
+              "id": 7,
+              "text": "file",
+              "lemma": "file",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 5,
+              "deprel": "obj",
+              "start_char": 252,
+              "end_char": 256
+            },
+            {
+              "id": 8,
+              "text": ".",
+              "lemma": ".",
+              "upos": "PUNCT",
+              "xpos": ".",
+              "feats": null,
+              "head": 5,
+              "deprel": "punct",
+              "start_char": 256,
+              "end_char": 257
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "status": "local_snapshot_hash_verified",
+        "mapping": "paragraph level only; not a per-word original-file map"
+      },
+      "representation": {
+        "mode": "plain"
+      },
+      "target_span": [
+        0,
+        58
+      ],
+      "target_sentence_id": 1,
+      "code_mentions": [
+        {
+          "id": "c1",
+          "text": "git add",
+          "span": [
+            4,
+            11
+          ],
+          "raw_content_span": [
+            5,
+            12
+          ],
+          "kind": "source_inline_code",
+          "semantic_type": "not_determined",
+          "is_independent_assertion": false,
+          "sentence_id": 1,
+          "parser_word_ids": [
+            2,
+            3
+          ],
+          "parser_token_spans": [
+            [
+              4,
+              7
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "single_parser_word": false
+        }
+      ],
+      "code_boundary_issues": [],
+      "scope_ablation_eligible": true
+    },
+    {
+      "id": "nr-docker-patch-only-11",
+      "kind": "real_document_new_page_development_diagnostic",
+      "input": {
+        "id": "nr-docker-patch-only-11",
+        "kind": "real_document_new_page_development_diagnostic",
+        "document_group": "docker-live-restore",
+        "text": "Live restore allows you to keep containers running across Docker daemon updates, but is only supported when installing patch releases (YY.MM.x), not for major (YY.MM) daemon upgrades.",
+        "target_span": [
+          0,
+          183
+        ],
+        "context_policy": "Full selected prose paragraph/list-item prose span; one target sentence. Headings, external code blocks and other paragraphs are context-only in the reference, not silently appended to the parser text.",
+        "source": {
+          "file": "sources/new-real-v09-2026-11-07/live-restore.md",
+          "file_sha256": "b6a26c1908d88ee141ed92f503e470b1bbc0f2dc57b98824eeefd457c363a76c",
+          "url": "https://docs.docker.com/engine/daemon/live-restore/",
+          "raw_url": "https://raw.githubusercontent.com/docker/docs/dc98e192e7879ab36c55905844feda9685487324/content/manuals/engine/daemon/live-restore.md",
+          "revision": "dc98e192e7879ab36c55905844feda9685487324",
+          "section": "Live restore during upgrades",
+          "raw_lines_inclusive": [
+            53,
+            55
+          ],
+          "raw_paragraph_span": [
+            1965,
+            2152
+          ],
+          "raw_paragraph_sha256": "f12618451d405ec378aca37448a4103eecf698e24f2787c83a978704d582f1f1"
+        },
+        "preparation": {
+          "text_sha256": "c6e86680948eec689984b5301913cb36b73702860dec3814578af74e0b4f66dd",
+          "character_unit": "Unicode code points",
+          "interval": "zero-based half-open",
+          "method": "Frozen v0.9 finite renderer: inline code/link/list handling, whitespace collapse. Other markup in non-target context remains literal. No sentence rewriting or token repair.",
+          "script_sha256": "f1c4ce4256ab222b899662faebb720de263f8f4163a9580ebc5c89b4f9639c24"
+        },
+        "annotation_status": "Assistant source references written before this batch is parsed; not independent human gold.",
+        "split_policy": "New-page purposive development diagnostic within already-seen Git/Docker projects; exclude these pages from future held-out claims.",
+        "recorded_on": "2026-11-07",
+        "source_code": {
+          "version": "libri-inline-code-0.1",
+          "raw_paragraph": "Live restore allows you to keep containers running across Docker daemon updates,\nbut is only supported when installing patch releases (`YY.MM.x`), not for\nmajor (`YY.MM`) daemon upgrades.",
+          "raw_sha256": "f12618451d405ec378aca37448a4103eecf698e24f2787c83a978704d582f1f1",
+          "text_sha256": "c6e86680948eec689984b5301913cb36b73702860dec3814578af74e0b4f66dd",
+          "plain_to_raw": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            163,
+            164,
+            165,
+            166,
+            167,
+            169,
+            170,
+            171,
+            172,
+            173,
+            174,
+            175,
+            176,
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186
+          ],
+          "spans": [
+            {
+              "id": "c1",
+              "text": "YY.MM.x",
+              "span": [
+                135,
+                142
+              ],
+              "raw_content_span": [
+                136,
+                143
+              ]
+            },
+            {
+              "id": "c2",
+              "text": "YY.MM",
+              "span": [
+                160,
+                165
+              ],
+              "raw_content_span": [
+                163,
+                168
+              ]
+            }
+          ],
+          "meaning": "source_inline_code_not_semantic_command_label"
+        }
+      },
+      "runtime_status": "ok",
+      "candidate": {
+        "status": "partial",
+        "reasons": [
+          "nondeclarative_or_complex_punctuation",
+          "unmodeled_predicate_attachment:iobj:you",
+          "unmodeled_predicate_attachment:xcomp:keep",
+          "unmodeled_predicate_attachment:conj:support"
+        ],
+        "frames": [
+          {
+            "id": "f1",
+            "kind": "event",
+            "head_word_id": 3,
+            "voice": "active",
+            "clause_form": "unspecified",
+            "subject_status": "explicit",
+            "predicate": {
+              "text": "allows",
+              "spans": [
+                [
+                  13,
+                  19
+                ]
+              ],
+              "word_ids": [
+                3
+              ],
+              "lemma": "allow"
+            },
+            "roles": [
+              {
+                "role": "subject",
+                "phrase": {
+                  "text": "Live restore",
+                  "spans": [
+                    [
+                      0,
+                      12
+                    ]
+                  ],
+                  "word_ids": [
+                    1,
+                    2
+                  ]
+                },
+                "head_word_id": 2,
+                "syntactic_relation": "nsubj",
+                "mention_type": "nominal",
+                "reference_status": "source_mention_only"
+              }
+            ],
+            "qualifier_ids": [
+              "q1",
+              "q2",
+              "q3"
+            ],
+            "is_independent_assertion": false
+          }
+        ],
+        "qualifiers": [
+          {
+            "id": "q1",
+            "kind": "unmodeled",
+            "cue": {
+              "text": "you",
+              "spans": [
+                [
+                  20,
+                  23
+                ]
+              ],
+              "word_ids": [
+                4
+              ]
+            },
+            "target": "f1",
+            "interpretation_status": "unresolved"
+          },
+          {
+            "id": "q2",
+            "kind": "unmodeled",
+            "cue": {
+              "text": "to keep containers running across Docker daemon updates",
+              "spans": [
+                [
+                  24,
+                  79
+                ]
+              ],
+              "word_ids": [
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ]
+            },
+            "target": "f1",
+            "interpretation_status": "unresolved"
+          },
+          {
+            "id": "q3",
+            "kind": "unmodeled",
+            "cue": {
+              "text": ", but is only supported when installing patch releases (YY.MM.x), not for major (YY.MM) daemon upgrades",
+              "spans": [
+                [
+                  79,
+                  182
+                ]
+              ],
+              "word_ids": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37
+              ]
+            },
+            "target": "f1",
+            "interpretation_status": "unresolved"
+          }
+        ],
+        "pp_candidates": [],
+        "candidate_structure": null,
+        "evidence": {
+          "text": "Live restore allows you to keep containers running across Docker daemon updates, but is only supported when installing patch releases (YY.MM.x), not for major (YY.MM) daemon upgrades.",
+          "spans": [
+            [
+              0,
+              183
+            ]
+          ],
+          "word_ids": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38
+          ]
+        },
+        "assertion_policy": "source_required"
+      },
+      "variants": {
+        "literal_svo": {
+          "variant": "literal_svo_heads",
+          "triples": [],
+          "note": "Drops modifiers and scope by design; evaluation only, not a safe user-facing claim.",
+          "reason": "requires_one_direct_subject_and_object"
+        },
+        "frames_without_scope": {
+          "variant": "frames_without_scope",
+          "frames": [
+            {
+              "id": "f1",
+              "kind": "event",
+              "head_word_id": 3,
+              "voice": "active",
+              "clause_form": "unspecified",
+              "subject_status": "explicit",
+              "predicate": {
+                "text": "allows",
+                "spans": [
+                  [
+                    13,
+                    19
+                  ]
+                ],
+                "word_ids": [
+                  3
+                ],
+                "lemma": "allow"
+              },
+              "roles": [
+                {
+                  "role": "subject",
+                  "phrase": {
+                    "text": "Live restore",
+                    "spans": [
+                      [
+                        0,
+                        12
+                      ]
+                    ],
+                    "word_ids": [
+                      1,
+                      2
+                    ]
+                  },
+                  "head_word_id": 2,
+                  "syntactic_relation": "nsubj",
+                  "mention_type": "nominal",
+                  "reference_status": "source_mention_only"
+                }
+              ],
+              "is_independent_assertion": false
+            }
+          ],
+          "ablation_definition": "all_qualifiers_removed_including_manner_time_result_configuration_method_destination_purpose",
+          "qualifiers": [],
+          "candidate_structure": null,
+          "parent_status": "partial",
+          "scope_ablation_eligible": false,
+          "note": "Same frame inventory and eligibility as full variant; all qualifiers removed, including time/result/configuration/method/destination and nested purpose as well as scope. Legacy key kept for compatibility. Score this payload, not raw evidence. Eligibility is NOT a dataset filter; all inputs remain in denominators. Partial fragments are diagnostic only."
+        },
+        "scope_operators_removed": {
+          "variant": "scope_operators_removed",
+          "removed_kinds": [
+            "default",
+            "if",
+            "modal",
+            "negation",
+            "only_after",
+            "purpose",
+            "unresolved_condition"
+          ],
+          "frames": [
+            {
+              "id": "f1",
+              "kind": "event",
+              "head_word_id": 3,
+              "voice": "active",
+              "clause_form": "unspecified",
+              "subject_status": "explicit",
+              "predicate": {
+                "text": "allows",
+                "spans": [
+                  [
+                    13,
+                    19
+                  ]
+                ],
+                "word_ids": [
+                  3
+                ],
+                "lemma": "allow"
+              },
+              "roles": [
+                {
+                  "role": "subject",
+                  "phrase": {
+                    "text": "Live restore",
+                    "spans": [
+                      [
+                        0,
+                        12
+                      ]
+                    ],
+                    "word_ids": [
+                      1,
+                      2
+                    ]
+                  },
+                  "head_word_id": 2,
+                  "syntactic_relation": "nsubj",
+                  "mention_type": "nominal",
+                  "reference_status": "source_mention_only"
+                }
+              ],
+              "qualifier_ids": [
+                "q1",
+                "q2",
+                "q3"
+              ],
+              "is_independent_assertion": false
+            }
+          ],
+          "qualifiers": [
+            {
+              "id": "q1",
+              "kind": "unmodeled",
+              "cue": {
+                "text": "you",
+                "spans": [
+                  [
+                    20,
+                    23
+                  ]
+                ],
+                "word_ids": [
+                  4
+                ]
+              },
+              "target": "f1",
+              "interpretation_status": "unresolved"
+            },
+            {
+              "id": "q2",
+              "kind": "unmodeled",
+              "cue": {
+                "text": "to keep containers running across Docker daemon updates",
+                "spans": [
+                  [
+                    24,
+                    79
+                  ]
+                ],
+                "word_ids": [
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12
+                ]
+              },
+              "target": "f1",
+              "interpretation_status": "unresolved"
+            },
+            {
+              "id": "q3",
+              "kind": "unmodeled",
+              "cue": {
+                "text": ", but is only supported when installing patch releases (YY.MM.x), not for major (YY.MM) daemon upgrades",
+                "spans": [
+                  [
+                    79,
+                    182
+                  ]
+                ],
+                "word_ids": [
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37
+                ]
+              },
+              "target": "f1",
+              "interpretation_status": "unresolved"
+            }
+          ],
+          "candidate_structure": null,
+          "parent_status": "partial",
+          "scope_ablation_eligible": false,
+          "note": "Evaluation-only ablation: removes selected negation/modal/condition/default operators, including unresolved_condition and nested purpose; retains manner/time/result/configuration/method/destination content. Unmodeled cue text, purpose text and condition frames can remain: this is node removal, not erasure of all scope information. Same input/frame denominator. No independent assertions or safe user-facing claims."
+        }
+      },
+      "syntax": [
+        {
+          "sentence_id": 1,
+          "text": "Live restore allows you to keep containers running across Docker daemon updates, but is only supported when installing patch releases (YY.MM.x), not for major (YY.MM) daemon upgrades.",
+          "tokens": [
+            {
+              "id": [
+                1
+              ],
+              "text": "Live",
+              "start_char": 0,
+              "end_char": 4,
+              "word_ids": [
+                1
+              ]
+            },
+            {
+              "id": [
+                2
+              ],
+              "text": "restore",
+              "start_char": 5,
+              "end_char": 12,
+              "word_ids": [
+                2
+              ]
+            },
+            {
+              "id": [
+                3
+              ],
+              "text": "allows",
+              "start_char": 13,
+              "end_char": 19,
+              "word_ids": [
+                3
+              ]
+            },
+            {
+              "id": [
+                4
+              ],
+              "text": "you",
+              "start_char": 20,
+              "end_char": 23,
+              "word_ids": [
+                4
+              ]
+            },
+            {
+              "id": [
+                5
+              ],
+              "text": "to",
+              "start_char": 24,
+              "end_char": 26,
+              "word_ids": [
+                5
+              ]
+            },
+            {
+              "id": [
+                6
+              ],
+              "text": "keep",
+              "start_char": 27,
+              "end_char": 31,
+              "word_ids": [
+                6
+              ]
+            },
+            {
+              "id": [
+                7
+              ],
+              "text": "containers",
+              "start_char": 32,
+              "end_char": 42,
+              "word_ids": [
+                7
+              ]
+            },
+            {
+              "id": [
+                8
+              ],
+              "text": "running",
+              "start_char": 43,
+              "end_char": 50,
+              "word_ids": [
+                8
+              ]
+            },
+            {
+              "id": [
+                9
+              ],
+              "text": "across",
+              "start_char": 51,
+              "end_char": 57,
+              "word_ids": [
+                9
+              ]
+            },
+            {
+              "id": [
+                10
+              ],
+              "text": "Docker",
+              "start_char": 58,
+              "end_char": 64,
+              "word_ids": [
+                10
+              ]
+            },
+            {
+              "id": [
+                11
+              ],
+              "text": "daemon",
+              "start_char": 65,
+              "end_char": 71,
+              "word_ids": [
+                11
+              ]
+            },
+            {
+              "id": [
+                12
+              ],
+              "text": "updates",
+              "start_char": 72,
+              "end_char": 79,
+              "word_ids": [
+                12
+              ]
+            },
+            {
+              "id": [
+                13
+              ],
+              "text": ",",
+              "start_char": 79,
+              "end_char": 80,
+              "word_ids": [
+                13
+              ]
+            },
+            {
+              "id": [
+                14
+              ],
+              "text": "but",
+              "start_char": 81,
+              "end_char": 84,
+              "word_ids": [
+                14
+              ]
+            },
+            {
+              "id": [
+                15
+              ],
+              "text": "is",
+              "start_char": 85,
+              "end_char": 87,
+              "word_ids": [
+                15
+              ]
+            },
+            {
+              "id": [
+                16
+              ],
+              "text": "only",
+              "start_char": 88,
+              "end_char": 92,
+              "word_ids": [
+                16
+              ]
+            },
+            {
+              "id": [
+                17
+              ],
+              "text": "supported",
+              "start_char": 93,
+              "end_char": 102,
+              "word_ids": [
+                17
+              ]
+            },
+            {
+              "id": [
+                18
+              ],
+              "text": "when",
+              "start_char": 103,
+              "end_char": 107,
+              "word_ids": [
+                18
+              ]
+            },
+            {
+              "id": [
+                19
+              ],
+              "text": "installing",
+              "start_char": 108,
+              "end_char": 118,
+              "word_ids": [
+                19
+              ]
+            },
+            {
+              "id": [
+                20
+              ],
+              "text": "patch",
+              "start_char": 119,
+              "end_char": 124,
+              "word_ids": [
+                20
+              ]
+            },
+            {
+              "id": [
+                21
+              ],
+              "text": "releases",
+              "start_char": 125,
+              "end_char": 133,
+              "word_ids": [
+                21
+              ]
+            },
+            {
+              "id": [
+                22
+              ],
+              "text": "(",
+              "start_char": 134,
+              "end_char": 135,
+              "word_ids": [
+                22
+              ]
+            },
+            {
+              "id": [
+                23
+              ],
+              "text": "YY.",
+              "start_char": 135,
+              "end_char": 138,
+              "word_ids": [
+                23
+              ]
+            },
+            {
+              "id": [
+                24
+              ],
+              "text": "MM.",
+              "start_char": 138,
+              "end_char": 141,
+              "word_ids": [
+                24
+              ]
+            },
+            {
+              "id": [
+                25
+              ],
+              "text": "x",
+              "start_char": 141,
+              "end_char": 142,
+              "word_ids": [
+                25
+              ]
+            },
+            {
+              "id": [
+                26
+              ],
+              "text": ")",
+              "start_char": 142,
+              "end_char": 143,
+              "word_ids": [
+                26
+              ]
+            },
+            {
+              "id": [
+                27
+              ],
+              "text": ",",
+              "start_char": 143,
+              "end_char": 144,
+              "word_ids": [
+                27
+              ]
+            },
+            {
+              "id": [
+                28
+              ],
+              "text": "not",
+              "start_char": 145,
+              "end_char": 148,
+              "word_ids": [
+                28
+              ]
+            },
+            {
+              "id": [
+                29
+              ],
+              "text": "for",
+              "start_char": 149,
+              "end_char": 152,
+              "word_ids": [
+                29
+              ]
+            },
+            {
+              "id": [
+                30
+              ],
+              "text": "major",
+              "start_char": 153,
+              "end_char": 158,
+              "word_ids": [
+                30
+              ]
+            },
+            {
+              "id": [
+                31
+              ],
+              "text": "(",
+              "start_char": 159,
+              "end_char": 160,
+              "word_ids": [
+                31
+              ]
+            },
+            {
+              "id": [
+                32
+              ],
+              "text": "YY",
+              "start_char": 160,
+              "end_char": 162,
+              "word_ids": [
+                32
+              ]
+            },
+            {
+              "id": [
+                33
+              ],
+              "text": ".",
+              "start_char": 162,
+              "end_char": 163,
+              "word_ids": [
+                33
+              ]
+            },
+            {
+              "id": [
+                34
+              ],
+              "text": "MM",
+              "start_char": 163,
+              "end_char": 165,
+              "word_ids": [
+                34
+              ]
+            },
+            {
+              "id": [
+                35
+              ],
+              "text": ")",
+              "start_char": 165,
+              "end_char": 166,
+              "word_ids": [
+                35
+              ]
+            },
+            {
+              "id": [
+                36
+              ],
+              "text": "daemon",
+              "start_char": 167,
+              "end_char": 173,
+              "word_ids": [
+                36
+              ]
+            },
+            {
+              "id": [
+                37
+              ],
+              "text": "upgrades",
+              "start_char": 174,
+              "end_char": 182,
+              "word_ids": [
+                37
+              ]
+            },
+            {
+              "id": [
+                38
+              ],
+              "text": ".",
+              "start_char": 182,
+              "end_char": 183,
+              "word_ids": [
+                38
+              ]
+            }
+          ],
+          "words": [
+            {
+              "id": 1,
+              "text": "Live",
+              "lemma": "live",
+              "upos": "VERB",
+              "xpos": "VB",
+              "feats": "Mood=Imp|VerbForm=Fin",
+              "head": 2,
+              "deprel": "compound",
+              "start_char": 0,
+              "end_char": 4
+            },
+            {
+              "id": 2,
+              "text": "restore",
+              "lemma": "restore",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 3,
+              "deprel": "nsubj",
+              "start_char": 5,
+              "end_char": 12
+            },
+            {
+              "id": 3,
+              "text": "allows",
+              "lemma": "allow",
+              "upos": "VERB",
+              "xpos": "VBZ",
+              "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+              "head": 0,
+              "deprel": "root",
+              "start_char": 13,
+              "end_char": 19
+            },
+            {
+              "id": 4,
+              "text": "you",
+              "lemma": "you",
+              "upos": "PRON",
+              "xpos": "PRP",
+              "feats": "Case=Acc|Person=2|PronType=Prs",
+              "head": 3,
+              "deprel": "iobj",
+              "start_char": 20,
+              "end_char": 23
+            },
+            {
+              "id": 5,
+              "text": "to",
+              "lemma": "to",
+              "upos": "PART",
+              "xpos": "TO",
+              "feats": null,
+              "head": 6,
+              "deprel": "mark",
+              "start_char": 24,
+              "end_char": 26
+            },
+            {
+              "id": 6,
+              "text": "keep",
+              "lemma": "keep",
+              "upos": "VERB",
+              "xpos": "VB",
+              "feats": "VerbForm=Inf",
+              "head": 3,
+              "deprel": "xcomp",
+              "start_char": 27,
+              "end_char": 31
+            },
+            {
+              "id": 7,
+              "text": "containers",
+              "lemma": "container",
+              "upos": "NOUN",
+              "xpos": "NNS",
+              "feats": "Number=Plur",
+              "head": 6,
+              "deprel": "obj",
+              "start_char": 32,
+              "end_char": 42
+            },
+            {
+              "id": 8,
+              "text": "running",
+              "lemma": "run",
+              "upos": "VERB",
+              "xpos": "VBG",
+              "feats": "VerbForm=Ger",
+              "head": 6,
+              "deprel": "xcomp",
+              "start_char": 43,
+              "end_char": 50
+            },
+            {
+              "id": 9,
+              "text": "across",
+              "lemma": "across",
+              "upos": "ADP",
+              "xpos": "IN",
+              "feats": null,
+              "head": 12,
+              "deprel": "case",
+              "start_char": 51,
+              "end_char": 57
+            },
+            {
+              "id": 10,
+              "text": "Docker",
+              "lemma": "Docker",
+              "upos": "PROPN",
+              "xpos": "NNP",
+              "feats": "Number=Sing",
+              "head": 12,
+              "deprel": "compound",
+              "start_char": 58,
+              "end_char": 64
+            },
+            {
+              "id": 11,
+              "text": "daemon",
+              "lemma": "daemon",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 12,
+              "deprel": "compound",
+              "start_char": 65,
+              "end_char": 71
+            },
+            {
+              "id": 12,
+              "text": "updates",
+              "lemma": "update",
+              "upos": "NOUN",
+              "xpos": "NNS",
+              "feats": "Number=Plur",
+              "head": 8,
+              "deprel": "obl",
+              "start_char": 72,
+              "end_char": 79
+            },
+            {
+              "id": 13,
+              "text": ",",
+              "lemma": ",",
+              "upos": "PUNCT",
+              "xpos": ",",
+              "feats": null,
+              "head": 17,
+              "deprel": "punct",
+              "start_char": 79,
+              "end_char": 80
+            },
+            {
+              "id": 14,
+              "text": "but",
+              "lemma": "but",
+              "upos": "CCONJ",
+              "xpos": "CC",
+              "feats": null,
+              "head": 17,
+              "deprel": "cc",
+              "start_char": 81,
+              "end_char": 84
+            },
+            {
+              "id": 15,
+              "text": "is",
+              "lemma": "be",
+              "upos": "AUX",
+              "xpos": "VBZ",
+              "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+              "head": 17,
+              "deprel": "aux:pass",
+              "start_char": 85,
+              "end_char": 87
+            },
+            {
+              "id": 16,
+              "text": "only",
+              "lemma": "only",
+              "upos": "ADV",
+              "xpos": "RB",
+              "feats": null,
+              "head": 17,
+              "deprel": "advmod",
+              "start_char": 88,
+              "end_char": 92
+            },
+            {
+              "id": 17,
+              "text": "supported",
+              "lemma": "support",
+              "upos": "VERB",
+              "xpos": "VBN",
+              "feats": "Tense=Past|VerbForm=Part|Voice=Pass",
+              "head": 3,
+              "deprel": "conj",
+              "start_char": 93,
+              "end_char": 102
+            },
+            {
+              "id": 18,
+              "text": "when",
+              "lemma": "when",
+              "upos": "ADV",
+              "xpos": "WRB",
+              "feats": "PronType=Int",
+              "head": 19,
+              "deprel": "advmod",
+              "start_char": 103,
+              "end_char": 107
+            },
+            {
+              "id": 19,
+              "text": "installing",
+              "lemma": "install",
+              "upos": "VERB",
+              "xpos": "VBG",
+              "feats": "Tense=Pres|VerbForm=Part",
+              "head": 17,
+              "deprel": "advcl",
+              "start_char": 108,
+              "end_char": 118
+            },
+            {
+              "id": 20,
+              "text": "patch",
+              "lemma": "patch",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 21,
+              "deprel": "compound",
+              "start_char": 119,
+              "end_char": 124
+            },
+            {
+              "id": 21,
+              "text": "releases",
+              "lemma": "release",
+              "upos": "NOUN",
+              "xpos": "NNS",
+              "feats": "Number=Plur",
+              "head": 19,
+              "deprel": "obj",
+              "start_char": 125,
+              "end_char": 133
+            },
+            {
+              "id": 22,
+              "text": "(",
+              "lemma": "(",
+              "upos": "PUNCT",
+              "xpos": "-LRB-",
+              "feats": null,
+              "head": 25,
+              "deprel": "punct",
+              "start_char": 134,
+              "end_char": 135
+            },
+            {
+              "id": 23,
+              "text": "YY.",
+              "lemma": "yy.",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 24,
+              "deprel": "compound",
+              "start_char": 135,
+              "end_char": 138
+            },
+            {
+              "id": 24,
+              "text": "MM.",
+              "lemma": "mm.",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 25,
+              "deprel": "compound",
+              "start_char": 138,
+              "end_char": 141
+            },
+            {
+              "id": 25,
+              "text": "x",
+              "lemma": "x",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 21,
+              "deprel": "appos",
+              "start_char": 141,
+              "end_char": 142
+            },
+            {
+              "id": 26,
+              "text": ")",
+              "lemma": ")",
+              "upos": "PUNCT",
+              "xpos": "-RRB-",
+              "feats": null,
+              "head": 25,
+              "deprel": "punct",
+              "start_char": 142,
+              "end_char": 143
+            },
+            {
+              "id": 27,
+              "text": ",",
+              "lemma": ",",
+              "upos": "PUNCT",
+              "xpos": ",",
+              "feats": null,
+              "head": 37,
+              "deprel": "punct",
+              "start_char": 143,
+              "end_char": 144
+            },
+            {
+              "id": 28,
+              "text": "not",
+              "lemma": "not",
+              "upos": "PART",
+              "xpos": "RB",
+              "feats": "Polarity=Neg",
+              "head": 37,
+              "deprel": "advmod",
+              "start_char": 145,
+              "end_char": 148
+            },
+            {
+              "id": 29,
+              "text": "for",
+              "lemma": "for",
+              "upos": "ADP",
+              "xpos": "IN",
+              "feats": null,
+              "head": 37,
+              "deprel": "case",
+              "start_char": 149,
+              "end_char": 152
+            },
+            {
+              "id": 30,
+              "text": "major",
+              "lemma": "major",
+              "upos": "ADJ",
+              "xpos": "JJ",
+              "feats": "Degree=Pos",
+              "head": 37,
+              "deprel": "amod",
+              "start_char": 153,
+              "end_char": 158
+            },
+            {
+              "id": 31,
+              "text": "(",
+              "lemma": "(",
+              "upos": "PUNCT",
+              "xpos": "-LRB-",
+              "feats": null,
+              "head": 32,
+              "deprel": "punct",
+              "start_char": 159,
+              "end_char": 160
+            },
+            {
+              "id": 32,
+              "text": "YY",
+              "lemma": "YY",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 37,
+              "deprel": "compound",
+              "start_char": 160,
+              "end_char": 162
+            },
+            {
+              "id": 33,
+              "text": ".",
+              "lemma": ".",
+              "upos": "PUNCT",
+              "xpos": ".",
+              "feats": null,
+              "head": 32,
+              "deprel": "punct",
+              "start_char": 162,
+              "end_char": 163
+            },
+            {
+              "id": 34,
+              "text": "MM",
+              "lemma": "mm",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 32,
+              "deprel": "flat",
+              "start_char": 163,
+              "end_char": 165
+            },
+            {
+              "id": 35,
+              "text": ")",
+              "lemma": ")",
+              "upos": "PUNCT",
+              "xpos": "-RRB-",
+              "feats": null,
+              "head": 32,
+              "deprel": "punct",
+              "start_char": 165,
+              "end_char": 166
+            },
+            {
+              "id": 36,
+              "text": "daemon",
+              "lemma": "daemon",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 37,
+              "deprel": "compound",
+              "start_char": 167,
+              "end_char": 173
+            },
+            {
+              "id": 37,
+              "text": "upgrades",
+              "lemma": "upgrade",
+              "upos": "NOUN",
+              "xpos": "NNS",
+              "feats": "Number=Plur",
+              "head": 19,
+              "deprel": "obl",
+              "start_char": 174,
+              "end_char": 182
+            },
+            {
+              "id": 38,
+              "text": ".",
+              "lemma": ".",
+              "upos": "PUNCT",
+              "xpos": ".",
+              "feats": null,
+              "head": 3,
+              "deprel": "punct",
+              "start_char": 182,
+              "end_char": 183
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "status": "local_snapshot_hash_verified",
+        "mapping": "paragraph level only; not a per-word original-file map"
+      },
+      "representation": {
+        "mode": "plain"
+      },
+      "target_span": [
+        0,
+        183
+      ],
+      "target_sentence_id": 1,
+      "code_mentions": [
+        {
+          "id": "c1",
+          "text": "YY.MM.x",
+          "span": [
+            135,
+            142
+          ],
+          "raw_content_span": [
+            136,
+            143
+          ],
+          "kind": "source_inline_code",
+          "semantic_type": "not_determined",
+          "is_independent_assertion": false,
+          "sentence_id": 1,
+          "parser_word_ids": [
+            23,
+            24,
+            25
+          ],
+          "parser_token_spans": [
+            [
+              135,
+              138
+            ],
+            [
+              138,
+              141
+            ],
+            [
+              141,
+              142
+            ]
+          ],
+          "single_parser_word": false
+        },
+        {
+          "id": "c2",
+          "text": "YY.MM",
+          "span": [
+            160,
+            165
+          ],
+          "raw_content_span": [
+            163,
+            168
+          ],
+          "kind": "source_inline_code",
+          "semantic_type": "not_determined",
+          "is_independent_assertion": false,
+          "sentence_id": 1,
+          "parser_word_ids": [
+            32,
+            33,
+            34
+          ],
+          "parser_token_spans": [
+            [
+              160,
+              162
+            ],
+            [
+              162,
+              163
+            ],
+            [
+              163,
+              165
+            ]
+          ],
+          "single_parser_word": false
+        }
+      ],
+      "code_boundary_issues": [],
+      "scope_ablation_eligible": false
+    },
+    {
+      "id": "docker-policy-only-containers-003",
+      "kind": "real_document_development_diagnostic",
+      "input": {
+        "id": "docker-policy-only-containers-003",
+        "kind": "real_document_development_diagnostic",
+        "document_group": "docker-restart-policies",
+        "text": "Restart policies only apply to containers. To configure restart policies for Swarm services, see flags related to service restart.",
+        "target_span": [
+          0,
+          42
+        ],
+        "context_policy": "Entire selected prose paragraph/list item is parser input; only target_span is evaluated. The source section identifies option/example context, not an inferred universal behavior.",
+        "source": {
+          "file": "sources/docker-restart-2026-11-06/start-containers-automatically.md",
+          "file_sha256": "51c7adf0856eb5ecc91a9d9f9b9567c75fbefa02d02abdfd5c3ec50c535a1881",
+          "url": "https://docs.docker.com/engine/containers/start-containers-automatically/",
+          "revision": "dc98e192e7879ab36c55905844feda9685487324",
+          "format": "Markdown",
+          "license_snapshot": "sources/docker-restart-2026-11-06/LICENSE",
+          "section": "Restart policy details",
+          "raw_lines_inclusive": [
+            70,
+            72
+          ],
+          "raw_paragraph_span": [
+            4602,
+            4779
+          ],
+          "raw_paragraph_sha256": "ea3ea30b817ff9648e903f5383d2c1bbc721d53c3fbefd1fa54d22e08950c359"
+        },
+        "preparation": {
+          "method": "Select full prose paragraph/list item (omit option term labels); remove initial bullet marker and backticks, render inline Markdown links as their labels, collapse whitespace. Preserve original words; no paraphrasing.",
+          "character_unit": "Unicode code points",
+          "interval": "zero-based half-open",
+          "source_mapping": "paragraph-level raw span only; no per-token original-file mapping",
+          "text_sha256": "f472be18aaadf1e527575f0339b02b72dbfa6000d20e48d03091107c5ea26e30",
+          "script_sha256": "048b49e3d24e0224d2b72af04261da5d90142237b7d12b6062bd847f8fc7a147"
+        },
+        "annotation_status": "assistant-authored expectations stored separately; not independently annotated gold",
+        "split_policy": "development_only; exclude the entire document_group from later held-out evaluation",
+        "recorded_on": "2026-11-06",
+        "source_code": {
+          "version": "libri-inline-code-0.1",
+          "raw_paragraph": "- Restart policies only apply to containers. To configure restart policies for\n  Swarm services, see\n  [flags related to service restart](/reference/cli/docker/service/create/).",
+          "raw_sha256": "ea3ea30b817ff9648e903f5383d2c1bbc721d53c3fbefd1fa54d22e08950c359",
+          "text_sha256": "f472be18aaadf1e527575f0339b02b72dbfa6000d20e48d03091107c5ea26e30",
+          "plain_to_raw": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            176
+          ],
+          "spans": [],
+          "meaning": "source_inline_code_not_semantic_command_label"
+        }
+      },
+      "runtime_status": "ok",
+      "candidate": {
+        "status": "unsupported",
+        "reasons": [
+          "missing_explicit_subject",
+          "subjectless_parataxis_not_supported"
+        ],
+        "frames": [],
+        "qualifiers": [],
+        "pp_candidates": [
+          {
+            "id": "p1",
+            "preposition": {
+              "text": "to",
+              "spans": [
+                [
+                  28,
+                  30
+                ]
+              ],
+              "word_ids": [
+                5
+              ]
+            },
+            "object": {
+              "text": "containers",
+              "spans": [
+                [
+                  31,
+                  41
+                ]
+              ],
+              "word_ids": [
+                6
+              ]
+            },
+            "phrase": {
+              "text": "to containers",
+              "spans": [
+                [
+                  28,
+                  41
+                ]
+              ],
+              "word_ids": [
+                5,
+                6
+              ]
+            },
+            "nominal_head": {
+              "text": "containers",
+              "spans": [
+                [
+                  31,
+                  41
+                ]
+              ],
+              "word_ids": [
+                6
+              ]
+            },
+            "parser_attachment": {
+              "deprel": "obl",
+              "governor": {
+                "text": "apply",
+                "spans": [
+                  [
+                    22,
+                    27
+                  ]
+                ],
+                "word_ids": [
+                  4
+                ]
+              }
+            },
+            "frame_context": null,
+            "syntax_pattern": "simple_nominal",
+            "syntax_notes": [],
+            "boundary_status": "parser_subtree_not_validated",
+            "semantic_role": "not_determined",
+            "semantic_binding": "unresolved",
+            "is_independent_assertion": false
+          }
+        ],
+        "candidate_structure": null,
+        "evidence": {
+          "text": "Restart policies only apply to containers.",
+          "spans": [
+            [
+              0,
+              42
+            ]
+          ],
+          "word_ids": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "assertion_policy": "source_required"
+      },
+      "variants": {
+        "literal_svo": {
+          "variant": "literal_svo_heads",
+          "triples": [],
+          "note": "Drops modifiers and scope by design; evaluation only, not a safe user-facing claim.",
+          "reason": "requires_one_direct_subject_and_object"
+        },
+        "frames_without_scope": {
+          "variant": "frames_without_scope",
+          "frames": [],
+          "ablation_definition": "all_qualifiers_removed_including_manner_time_result_configuration_method_destination_purpose",
+          "qualifiers": [],
+          "candidate_structure": null,
+          "parent_status": "unsupported",
+          "scope_ablation_eligible": false,
+          "note": "Same frame inventory and eligibility as full variant; all qualifiers removed, including time/result/configuration/method/destination and nested purpose as well as scope. Legacy key kept for compatibility. Score this payload, not raw evidence. Eligibility is NOT a dataset filter; all inputs remain in denominators. Partial fragments are diagnostic only."
+        },
+        "scope_operators_removed": {
+          "variant": "scope_operators_removed",
+          "removed_kinds": [
+            "default",
+            "if",
+            "modal",
+            "negation",
+            "only_after",
+            "purpose",
+            "unresolved_condition"
+          ],
+          "frames": [],
+          "qualifiers": [],
+          "candidate_structure": null,
+          "parent_status": "unsupported",
+          "scope_ablation_eligible": false,
+          "note": "Evaluation-only ablation: removes selected negation/modal/condition/default operators, including unresolved_condition and nested purpose; retains manner/time/result/configuration/method/destination content. Unmodeled cue text, purpose text and condition frames can remain: this is node removal, not erasure of all scope information. Same input/frame denominator. No independent assertions or safe user-facing claims."
+        }
+      },
+      "syntax": [
+        {
+          "sentence_id": 1,
+          "text": "Restart policies only apply to containers.",
+          "tokens": [
+            {
+              "id": [
+                1
+              ],
+              "text": "Restart",
+              "start_char": 0,
+              "end_char": 7,
+              "word_ids": [
+                1
+              ]
+            },
+            {
+              "id": [
+                2
+              ],
+              "text": "policies",
+              "start_char": 8,
+              "end_char": 16,
+              "word_ids": [
+                2
+              ]
+            },
+            {
+              "id": [
+                3
+              ],
+              "text": "only",
+              "start_char": 17,
+              "end_char": 21,
+              "word_ids": [
+                3
+              ]
+            },
+            {
+              "id": [
+                4
+              ],
+              "text": "apply",
+              "start_char": 22,
+              "end_char": 27,
+              "word_ids": [
+                4
+              ]
+            },
+            {
+              "id": [
+                5
+              ],
+              "text": "to",
+              "start_char": 28,
+              "end_char": 30,
+              "word_ids": [
+                5
+              ]
+            },
+            {
+              "id": [
+                6
+              ],
+              "text": "containers",
+              "start_char": 31,
+              "end_char": 41,
+              "word_ids": [
+                6
+              ]
+            },
+            {
+              "id": [
+                7
+              ],
+              "text": ".",
+              "start_char": 41,
+              "end_char": 42,
+              "word_ids": [
+                7
+              ]
+            }
+          ],
+          "words": [
+            {
+              "id": 1,
+              "text": "Restart",
+              "lemma": "restart",
+              "upos": "VERB",
+              "xpos": "VB",
+              "feats": "Mood=Imp|VerbForm=Fin",
+              "head": 0,
+              "deprel": "root",
+              "start_char": 0,
+              "end_char": 7
+            },
+            {
+              "id": 2,
+              "text": "policies",
+              "lemma": "policy",
+              "upos": "NOUN",
+              "xpos": "NNS",
+              "feats": "Number=Plur",
+              "head": 4,
+              "deprel": "nsubj",
+              "start_char": 8,
+              "end_char": 16
+            },
+            {
+              "id": 3,
+              "text": "only",
+              "lemma": "only",
+              "upos": "ADV",
+              "xpos": "RB",
+              "feats": null,
+              "head": 4,
+              "deprel": "advmod",
+              "start_char": 17,
+              "end_char": 21
+            },
+            {
+              "id": 4,
+              "text": "apply",
+              "lemma": "apply",
+              "upos": "VERB",
+              "xpos": "VBP",
+              "feats": "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin",
+              "head": 1,
+              "deprel": "parataxis",
+              "start_char": 22,
+              "end_char": 27
+            },
+            {
+              "id": 5,
+              "text": "to",
+              "lemma": "to",
+              "upos": "ADP",
+              "xpos": "IN",
+              "feats": null,
+              "head": 6,
+              "deprel": "case",
+              "start_char": 28,
+              "end_char": 30
+            },
+            {
+              "id": 6,
+              "text": "containers",
+              "lemma": "container",
+              "upos": "NOUN",
+              "xpos": "NNS",
+              "feats": "Number=Plur",
+              "head": 4,
+              "deprel": "obl",
+              "start_char": 31,
+              "end_char": 41
+            },
+            {
+              "id": 7,
+              "text": ".",
+              "lemma": ".",
+              "upos": "PUNCT",
+              "xpos": ".",
+              "feats": null,
+              "head": 1,
+              "deprel": "punct",
+              "start_char": 41,
+              "end_char": 42
+            }
+          ]
+        },
+        {
+          "sentence_id": 2,
+          "text": "To configure restart policies for Swarm services, see flags related to service restart.",
+          "tokens": [
+            {
+              "id": [
+                1
+              ],
+              "text": "To",
+              "start_char": 43,
+              "end_char": 45,
+              "word_ids": [
+                1
+              ]
+            },
+            {
+              "id": [
+                2
+              ],
+              "text": "configure",
+              "start_char": 46,
+              "end_char": 55,
+              "word_ids": [
+                2
+              ]
+            },
+            {
+              "id": [
+                3
+              ],
+              "text": "restart",
+              "start_char": 56,
+              "end_char": 63,
+              "word_ids": [
+                3
+              ]
+            },
+            {
+              "id": [
+                4
+              ],
+              "text": "policies",
+              "start_char": 64,
+              "end_char": 72,
+              "word_ids": [
+                4
+              ]
+            },
+            {
+              "id": [
+                5
+              ],
+              "text": "for",
+              "start_char": 73,
+              "end_char": 76,
+              "word_ids": [
+                5
+              ]
+            },
+            {
+              "id": [
+                6
+              ],
+              "text": "Swarm",
+              "start_char": 77,
+              "end_char": 82,
+              "word_ids": [
+                6
+              ]
+            },
+            {
+              "id": [
+                7
+              ],
+              "text": "services",
+              "start_char": 83,
+              "end_char": 91,
+              "word_ids": [
+                7
+              ]
+            },
+            {
+              "id": [
+                8
+              ],
+              "text": ",",
+              "start_char": 91,
+              "end_char": 92,
+              "word_ids": [
+                8
+              ]
+            },
+            {
+              "id": [
+                9
+              ],
+              "text": "see",
+              "start_char": 93,
+              "end_char": 96,
+              "word_ids": [
+                9
+              ]
+            },
+            {
+              "id": [
+                10
+              ],
+              "text": "flags",
+              "start_char": 97,
+              "end_char": 102,
+              "word_ids": [
+                10
+              ]
+            },
+            {
+              "id": [
+                11
+              ],
+              "text": "related",
+              "start_char": 103,
+              "end_char": 110,
+              "word_ids": [
+                11
+              ]
+            },
+            {
+              "id": [
+                12
+              ],
+              "text": "to",
+              "start_char": 111,
+              "end_char": 113,
+              "word_ids": [
+                12
+              ]
+            },
+            {
+              "id": [
+                13
+              ],
+              "text": "service",
+              "start_char": 114,
+              "end_char": 121,
+              "word_ids": [
+                13
+              ]
+            },
+            {
+              "id": [
+                14
+              ],
+              "text": "restart",
+              "start_char": 122,
+              "end_char": 129,
+              "word_ids": [
+                14
+              ]
+            },
+            {
+              "id": [
+                15
+              ],
+              "text": ".",
+              "start_char": 129,
+              "end_char": 130,
+              "word_ids": [
+                15
+              ]
+            }
+          ],
+          "words": [
+            {
+              "id": 1,
+              "text": "To",
+              "lemma": "to",
+              "upos": "PART",
+              "xpos": "TO",
+              "feats": null,
+              "head": 2,
+              "deprel": "mark",
+              "start_char": 43,
+              "end_char": 45
+            },
+            {
+              "id": 2,
+              "text": "configure",
+              "lemma": "configure",
+              "upos": "VERB",
+              "xpos": "VB",
+              "feats": "VerbForm=Inf",
+              "head": 9,
+              "deprel": "advcl",
+              "start_char": 46,
+              "end_char": 55
+            },
+            {
+              "id": 3,
+              "text": "restart",
+              "lemma": "restart",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 4,
+              "deprel": "compound",
+              "start_char": 56,
+              "end_char": 63
+            },
+            {
+              "id": 4,
+              "text": "policies",
+              "lemma": "policy",
+              "upos": "NOUN",
+              "xpos": "NNS",
+              "feats": "Number=Plur",
+              "head": 2,
+              "deprel": "obj",
+              "start_char": 64,
+              "end_char": 72
+            },
+            {
+              "id": 5,
+              "text": "for",
+              "lemma": "for",
+              "upos": "ADP",
+              "xpos": "IN",
+              "feats": null,
+              "head": 7,
+              "deprel": "case",
+              "start_char": 73,
+              "end_char": 76
+            },
+            {
+              "id": 6,
+              "text": "Swarm",
+              "lemma": "swarm",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 7,
+              "deprel": "compound",
+              "start_char": 77,
+              "end_char": 82
+            },
+            {
+              "id": 7,
+              "text": "services",
+              "lemma": "service",
+              "upos": "NOUN",
+              "xpos": "NNS",
+              "feats": "Number=Plur",
+              "head": 4,
+              "deprel": "nmod",
+              "start_char": 83,
+              "end_char": 91
+            },
+            {
+              "id": 8,
+              "text": ",",
+              "lemma": ",",
+              "upos": "PUNCT",
+              "xpos": ",",
+              "feats": null,
+              "head": 2,
+              "deprel": "punct",
+              "start_char": 91,
+              "end_char": 92
+            },
+            {
+              "id": 9,
+              "text": "see",
+              "lemma": "see",
+              "upos": "VERB",
+              "xpos": "VB",
+              "feats": "Mood=Imp|VerbForm=Fin",
+              "head": 0,
+              "deprel": "root",
+              "start_char": 93,
+              "end_char": 96
+            },
+            {
+              "id": 10,
+              "text": "flags",
+              "lemma": "flag",
+              "upos": "NOUN",
+              "xpos": "NNS",
+              "feats": "Number=Plur",
+              "head": 9,
+              "deprel": "obj",
+              "start_char": 97,
+              "end_char": 102
+            },
+            {
+              "id": 11,
+              "text": "related",
+              "lemma": "related",
+              "upos": "ADJ",
+              "xpos": "JJ",
+              "feats": "Degree=Pos",
+              "head": 10,
+              "deprel": "amod",
+              "start_char": 103,
+              "end_char": 110
+            },
+            {
+              "id": 12,
+              "text": "to",
+              "lemma": "to",
+              "upos": "ADP",
+              "xpos": "IN",
+              "feats": null,
+              "head": 14,
+              "deprel": "case",
+              "start_char": 111,
+              "end_char": 113
+            },
+            {
+              "id": 13,
+              "text": "service",
+              "lemma": "service",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 14,
+              "deprel": "compound",
+              "start_char": 114,
+              "end_char": 121
+            },
+            {
+              "id": 14,
+              "text": "restart",
+              "lemma": "restart",
+              "upos": "NOUN",
+              "xpos": "NN",
+              "feats": "Number=Sing",
+              "head": 11,
+              "deprel": "obl",
+              "start_char": 122,
+              "end_char": 129
+            },
+            {
+              "id": 15,
+              "text": ".",
+              "lemma": ".",
+              "upos": "PUNCT",
+              "xpos": ".",
+              "feats": null,
+              "head": 9,
+              "deprel": "punct",
+              "start_char": 129,
+              "end_char": 130
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "status": "local_snapshot_hash_verified",
+        "mapping": "paragraph level only; not a per-word original-file map"
+      },
+      "representation": {
+        "mode": "plain"
+      },
+      "target_span": [
+        0,
+        42
+      ],
+      "target_sentence_id": 1,
+      "code_mentions": [],
+      "code_boundary_issues": [],
+      "scope_ablation_eligible": false
+    }
+  ]
+}

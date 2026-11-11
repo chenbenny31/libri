@@ -1,0 +1,14 @@
+{
+  "old20": {
+    "n": 20,
+    "stable_bundle_sha256": "ca88c6828b4ef7fc8d536f9df670b9cc6af0d2857de7cb3b22d7a21c8089c178",
+    "input_file_sha256": "6116a38aaae48b33ebdfc96258669f21aacac5a0d12e5279bdfe21bea38fedee",
+    "observed_file_sha256": "dffd73bc1f5001d484a6cfc8cfb8973c022a1f6fec00a9e3facb65aabdd1662c"
+  },
+  "new12": {
+    "n": 12,
+    "stable_bundle_sha256": "f97c32a4249ab4af9e2f8cf3f97634fc3d45e079148860635cc6ad4eb333b34f",
+    "input_file_sha256": "f8c87456bc7a5115d9e563c3eee40fdda398127c4833ec93c1e2964929e96d27",
+    "observed_file_sha256": "b3679a155c8e59b3578ab848956e5de176962834119d48359aa7fb4961427c09"
+  }
+}

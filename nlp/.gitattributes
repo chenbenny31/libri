@@ -1,0 +1,4 @@
+fixtures/**/*.json -text
+libri/sources/** -text
+libri/b_pipeline/*.py text eol=lf
+libri/experiments/stanza_probe/probe.py text eol=lf
